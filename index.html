@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Il ricettario della nonna</title>
 <link rel="stylesheet" href="/static/style.css">
@@ -12,18 +13,18 @@
 <h1>Il ricettario della nonna</h1>
 <p class="count">216 ricette.</p>
 <nav class="types" aria-label="Tipo di ricetta">
-<span class="type on" aria-current="true">Tutte <span class="type-n">216</span></span>
-<a class="type" href="/?tipo=antipasti">Antipasti <span class="type-n">4</span></a>
-<a class="type" href="/?tipo=primi">Primi <span class="type-n">21</span></a>
-<a class="type" href="/?tipo=secondi">Secondi <span class="type-n">8</span></a>
-<a class="type" href="/?tipo=contorni">Contorni <span class="type-n">4</span></a>
-<a class="type" href="/?tipo=torte-salate">Torte salate <span class="type-n">2</span></a>
-<a class="type" href="/?tipo=dolci">Dolci <span class="type-n">177</span></a>
+<span class="type on" aria-current="true" data-type="" data-label="Tutte" data-n="216">Tutte <span class="type-n">216</span></span>
+<a class="type" href="/?tipo=antipasti" data-type="antipasti" data-label="Antipasti" data-n="4">Antipasti <span class="type-n">4</span></a>
+<a class="type" href="/?tipo=primi" data-type="primi" data-label="Primi" data-n="21">Primi <span class="type-n">21</span></a>
+<a class="type" href="/?tipo=secondi" data-type="secondi" data-label="Secondi" data-n="8">Secondi <span class="type-n">8</span></a>
+<a class="type" href="/?tipo=contorni" data-type="contorni" data-label="Contorni" data-n="4">Contorni <span class="type-n">4</span></a>
+<a class="type" href="/?tipo=torte-salate" data-type="torte-salate" data-label="Torte salate" data-n="2">Torte salate <span class="type-n">2</span></a>
+<a class="type" href="/?tipo=dolci" data-type="dolci" data-label="Dolci" data-n="177">Dolci <span class="type-n">177</span></a>
 </nav>
-<form class="search" method="get" action="/" role="search">
+<form class="search" method="get" action="/" role="search" data-search-param="q" data-type-param="tipo">
 <input type="search" name="q" value="" placeholder="Cerca una ricetta o un ingrediente" aria-label="Cerca">
 
-<div class="facet-row" role="group" aria-label="Con">
+<div class="facet-row" role="group" aria-label="Con" data-row="con" data-exclude="0">
 <span class="facet-row-label" aria-hidden="true">Con</span>
 
 <label class="facet"><input type="checkbox" name="con" value="mele">mele</label>
@@ -38,7 +39,7 @@
 
 </div>
 
-<div class="facet-row" role="group" aria-label="Senza">
+<div class="facet-row" role="group" aria-label="Senza" data-row="senza" data-exclude="1">
 <span class="facet-row-label" aria-hidden="true">Senza</span>
 
 <label class="facet"><input type="checkbox" name="senza" value="uova">uova</label>
@@ -61,14 +62,13 @@
 
 </div>
 
-<button type="submit">Filtra</button>
 </form>
 
 
 <h2>Antipasti</h2>
 <div class="cards">
 
-<a class="card" href="/r/friselle-al-pomodoro">
+<a class="card" href="/r/friselle-al-pomodoro" data-facets="pane" data-type="antipasti" data-search="friselle al pomodoro antipasti friselle pomodorini basilico puglia pane  4 friselle (8 meta) 300 g pomodorini 1 spicchio di aglio 1 mazzetto di basilico (a piacere) 2 cucchiai di olio sale q.b.">
 <img src="/img/friselle-al-pomodoro-f72a60af.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Friselle al pomodoro</span>
@@ -77,7 +77,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pissaladiere">
+<a class="card" href="/r/pissaladiere" data-facets="pesce" data-type="antipasti" data-search="pissaladiere (focaccia di nizza con cipolle e acciughe) antipasti pissaladiere focaccia salata cipolle acciughe pasta lievitata francia nizza pesce per la pasta 500 g farina 200 ml acqua tiepida 15 g lievito di birra fresco 10 cucchiai di olio d&#39;oliva 2 cucchiaini di sale fino 1 cucchiaino di zucchero per il condimento 8 cipolle grandi 1 scatola di acciughe 3 spicchi d&#39;aglio 10 g zucchero olio d&#39;oliva sale fino pepe erbe aromatiche secche (timo o rosmarino) olive">
 <img src="/img/pissaladiere-2b64f890.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pissaladière (focaccia di Nizza con cipolle e acciughe)</span>
@@ -86,7 +86,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/skordalia-salsa-greca-di-pane-aglio-e-noci">
+<a class="card" href="/r/skordalia-salsa-greca-di-pane-aglio-e-noci" data-facets="frutta-secca pane" data-type="antipasti" data-search="skordalia (salsa greca di pane, aglio e noci) antipasti salsa skordalia pane in cassetta noci aglio grecia pane frutta secca  300 g pane in cassetta 1 tazza di noci (circa 100 g) 4-5 spicchi d&#39;aglio 1/3 di tazza di aceto (circa 80 ml) 1 tazza di olio d&#39;oliva (circa 240 ml) sale pepe prezzemolo, un po&#39; per servire">
 <img src="/img/skordalia-salsa-greca-di-pane-aglio-e-noci-981505b2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Skordalia (salsa greca di pane, aglio e noci)</span>
@@ -95,7 +95,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zapiekanka">
+<a class="card" href="/r/zapiekanka" data-facets="burro pane" data-type="antipasti" data-search="zapiekanka (baguette gratinata con funghi e formaggio) antipasti zapiekanka panino gratinato baguette funghi formaggio polonia pane burro  1 baguette o ciabatta 1 cucchiaio di burro all&#39;aglio 1 cucchiaio di burro 300 g funghi champignon 250 g formaggio a pasta gialla (per esempio gouda) 1/2 cipolla piccola ketchup fatto in casa, maionese ed erba cipollina, per servire">
 <img src="/img/zapiekanka-b4cb70ea.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zapiekanka (baguette gratinata con funghi e formaggio)</span>
@@ -109,7 +109,7 @@
 <h2>Primi</h2>
 <div class="cards">
 
-<a class="card" href="/r/acquacotta-maremmana">
+<a class="card" href="/r/acquacotta-maremmana" data-facets="pane uova" data-type="primi" data-search="acquacotta maremmana primi zuppa zuppa di verdure cipolle sedano pomodori pelati pecorino toscana maremma pane uova  2 cipolle bianche 2 coste di sedano verde 8 cucchiai di olio extravergine di oliva 1 scatola di pomodori pelati 1 l acqua bollente sale fino 6 uova pecorino toscano pepe nero macinato fresco 4 fette di pane toscano raffermo 1 spicchio di aglio">
 <img src="/img/acquacotta-maremmana-d77e258f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Acquacotta maremmana</span>
@@ -118,7 +118,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/acorda-alentejana">
+<a class="card" href="/r/acorda-alentejana" data-facets="pane uova" data-type="primi" data-search="acorda alentejana (zuppa di pane, aglio e coriandolo con uova in camicia) primi zuppa di pane acorda pane raffermo aglio coriandolo uova in camicia portogallo pane uova  300 g pane raffermo alentejano 4 spicchi d&#39;aglio 1 mazzetto abbondante di coriandolo fresco 4 uova 1 dl olio d&#39;oliva sale q.b. acqua q.b.">
 <img src="/img/acorda-alentejana-0cfd7167.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Açorda alentejana (zuppa di pane, aglio e coriandolo con uova in camicia)</span>
@@ -127,7 +127,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/canederli-agli-spinaci">
+<a class="card" href="/r/canederli-agli-spinaci" data-facets="burro latte pane uova" data-type="primi" data-search="canederli agli spinaci (spinatknodel) primi canederli spinaci pane raffermo alto adige pane uova latte burro  300 g pane per canederli (knodelbrot) 1/4 l latte tiepido 800 g spinaci surgelati 30 g burro 1 spicchio d&#39;aglio 1 cipolla piccola 2 uova sale, pepe, noce moscata 1 cucchiaio di farina 2 cucchiai di pangrattato 80 g burro 4 cucchiai di parmigiano grattugiato">
 <img src="/img/canederli-agli-spinaci-8d762d5d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Canederli agli spinaci (Spinatknödel)</span>
@@ -136,7 +136,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/canederli-allo-speck">
+<a class="card" href="/r/canederli-allo-speck" data-facets="burro carne latte pane uova" data-type="primi" data-search="canederli allo speck primi canederli speck pane raffermo trentino-alto adige pane carne uova latte burro per i canederli 250 g pane raffermo 2 uova 250 ml latte 1 cipolla piccola 100 g speck 1 cucchiaio di prezzemolo tritato 1 cucchiaio di erba cipollina tritata 2 cucchiai di formaggio stagionato grattugiato 30 g farina 00 40 g burro sale q.b. pepe q.b. per il condimento 150 g burro fuso formaggio stagionato grattugiato q.b.">
 <img src="/img/canederli-allo-speck-71dad5bf.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Canederli allo speck</span>
@@ -145,7 +145,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gnocchi-di-pane-raffermo-al-burro-e-salvia">
+<a class="card" href="/r/gnocchi-di-pane-raffermo-al-burro-e-salvia" data-facets="burro latte pane uova" data-type="primi" data-search="gnocchi di pane raffermo al burro e salvia primi gnocchi gnocchi di pane pane raffermo burro e salvia riciclo pane uova latte burro  300 g pane raffermo 2 bicchieri di latte (o 3) 200 g farina 0 1 uovo 50 g parmigiano reggiano dop sale q.b. 1 pizzico di noce moscata 50 g burro 7 foglie di salvia">
 <img src="/img/gnocchi-di-pane-raffermo-al-burro-e-salvia-21b19c3d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gnocchi di pane raffermo al burro e salvia</span>
@@ -154,7 +154,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/lablabi">
+<a class="card" href="/r/lablabi" data-facets="pane pesce uova" data-type="primi" data-search="lablabi (zuppa tunisina di ceci su pane raffermo) primi lablabi zuppa ceci pane raffermo harissa tunisia pane uova pesce  200 g ceci in scatola pane raffermo (per riempire 2 ciotole grandi) 2 uova 2 spicchi d&#39;aglio 1 cucchiaino abbondante di tabel karouia 1 cucchiaio abbondante di harissa per ciotola 1 cucchiaio di cumino macinato per ciotola tonno capperi olive olio d&#39;oliva vergine (un filo) 1/4 di limone per ciotola sale">
 <img src="/img/lablabi-5fb6f46f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Lablabi (zuppa tunisina di ceci su pane raffermo)</span>
@@ -163,7 +163,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/panada">
+<a class="card" href="/r/panada" data-facets="burro carne pane" data-type="primi" data-search="panada (zuppa di pane) primi zuppa zuppa di pane pane raffermo parmigiano emilia-romagna trentino pane carne burro  400 g pane raffermo 2 l brodo di carne 40 g burro parmigiano grattugiato q.b. sale q.b. pepe q.b.">
 <img src="/img/panada-8fed6564.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Panada (zuppa di pane)</span>
@@ -172,7 +172,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pancotto">
+<a class="card" href="/r/pancotto" data-facets="pane" data-type="primi" data-search="pancotto primi pancotto zuppa pane raffermo brodo vegetale riciclo pane per il brodo vegetale 1 gambo di sedano 1 carota grande 1 porro o cipolla 2 l acqua pepe q.b. sale q.b. per il pancotto 800 g pane raffermo 2 l brodo vegetale (quello preparato) olio extravergine di oliva q.b. parmigiano grattugiato q.b. pepe q.b.">
 <img src="/img/pancotto-cb950f50.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pancotto</span>
@@ -181,7 +181,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pane-frattau">
+<a class="card" href="/r/pane-frattau" data-facets="pane uova" data-type="primi" data-search="pane frattau primi pane carasau uovo in camicia sugo di pomodoro pecorino sardegna barbagia pane uova  8 fogli di pane carasau 300 ml brodo vegetale caldo 300 ml sugo di pomodoro 80 g pecorino grattugiato 4 uova 2 cucchiai di aceto di vino bianco pepe nero q.b.">
 <img src="/img/pane-frattau-61d0dde9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pane frattau</span>
@@ -190,7 +190,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/panzanella">
+<a class="card" href="/r/panzanella" data-facets="pane" data-type="primi" data-search="panzanella primi insalata di pane pomodori cipolle rosse cetrioli basilico toscana pane  300 g pane toscano raffermo 500 g pomodori ramati maturi 180 g cipolle rosse 200 g cetrioli 20 foglie di basilico 50 g olio extravergine d&#39;oliva 20 g aceto di vino bianco sale q.b. pepe nero q.b.">
 <img src="/img/panzanella-9ba2b82b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Panzanella</span>
@@ -199,7 +199,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pappa-al-pomodoro">
+<a class="card" href="/r/pappa-al-pomodoro" data-facets="pane" data-type="primi" data-search="pappa al pomodoro primi pappa al pomodoro zuppa minestra di pane pane raffermo pomodoro toscana riciclo pane  200 g pane toscano raffermo 2 spicchi di aglio 150 g cipolla 50 g olio extravergine d&#39;oliva 850 g pomodori pelati 300 g brodo vegetale sale q.b. pepe q.b. 8 foglie di basilico">
 <img src="/img/pappa-al-pomodoro-4bc3d3f2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pappa al pomodoro</span>
@@ -208,7 +208,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/passatelli-in-brodo">
+<a class="card" href="/r/passatelli-in-brodo" data-facets="carne pane uova" data-type="primi" data-search="passatelli in brodo primi passatelli pasta fresca brodo pangrattato emilia-romagna pane uova carne  110 g pangrattato di pane comune non condito 110 g parmigiano reggiano grattugiato 24 mesi 1/2 cucchiaino di noce moscata grattugiata al momento 2 uova 2 l brodo di carne">
 <img src="/img/passatelli-in-brodo-1f600171.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Passatelli in brodo</span>
@@ -217,7 +217,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/ribollita">
+<a class="card" href="/r/ribollita" data-facets="pane" data-type="primi" data-search="ribollita primi ribollita zuppa minestra di pane fagioli cavolo nero toscana pane raffermo riciclo pane  400 g fagioli cannellini lessati 200 g cavolo nero 100 g bietole 100 g verze 200 g patate 1 l brodo vegetale 100 g cipolla 80 g carote 100 g sedano 200 g pane raffermo toscano 40 g concentrato di pomodoro 2 rametti di timo 2 spicchi di aglio 100 g olio extravergine d&#39;oliva sale q.b. pepe q.b.">
 <img src="/img/ribollita-0d0720c2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Ribollita</span>
@@ -226,7 +226,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/salmorejo-cordobes">
+<a class="card" href="/r/salmorejo-cordobes" data-facets="carne pane uova" data-type="primi" data-search="salmorejo cordobes (crema fredda di pomodoro e pane) primi crema fredda salmorejo pomodori prosciutto uovo sodo spagna pane carne uova per il salmorejo 1 kg pomodori maturi 200 g pane rustico 1 spicchio d&#39;aglio 150 ml olio extravergine d&#39;oliva sale q.b. per accompagnare 1 uovo sodo 50 g prosciutto serrano">
 <img src="/img/salmorejo-cordobes-d39b51bc.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Salmorejo cordobés (crema fredda di pomodoro e pane)</span>
@@ -235,7 +235,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/sopa-de-ajo">
+<a class="card" href="/r/sopa-de-ajo" data-facets="carne pane uova" data-type="primi" data-search="sopa de ajo (zuppa castigliana all&#39;aglio con uova) primi zuppa zuppa di pane aglio prosciutto pane raffermo spagna pane carne uova  2 cucchiai di olio d&#39;oliva 8 spicchi d&#39;aglio 100 g prosciutto serrano a dadini 100 g pane raffermo 1 cucchiaino di paprica dolce 500 ml brodo di pollo 4 uova">
 <img src="/img/sopa-de-ajo-3d1a1fb8.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Sopa de ajo (zuppa castigliana all&#39;aglio con uova)</span>
@@ -244,7 +244,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/strangolapreti-trentini">
+<a class="card" href="/r/strangolapreti-trentini" data-facets="burro latte pane uova" data-type="primi" data-search="strangolapreti trentini primi strangolapreti gnocchi gnocchi di pane spinaci pane raffermo trentino-alto adige riciclo pane uova latte burro  300 g pane raffermo (mollica e poca crosta) 500 g spinaci (oppure 400 g surgelati) 300 g latte 2 uova (medie) 50 g farina 00 2 pizzichi di sale 1 pizzico di pepe nero noce moscata q.b. (a piacere) 50 g grana padano grattugiato per il condimento e per servire 100 g burro 10 foglie di salvia 80 g grana padano dop (o trentingrana)">
 <img src="/img/strangolapreti-trentini-490a856b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Strangolapreti trentini</span>
@@ -253,7 +253,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zuppa-alla-pavese">
+<a class="card" href="/r/zuppa-alla-pavese" data-facets="burro carne pane uova" data-type="primi" data-search="zuppa alla pavese primi zuppa zuppa di pane grana padano lombardia pavia pane uova burro carne  8 fette di pane 20 g burro 4 uova 60 g grana padano 1 l brodo di carne">
 <img src="/img/zuppa-alla-pavese-15223703.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zuppa alla pavese</span>
@@ -262,7 +262,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zuppa-alla-valpellinese">
+<a class="card" href="/r/zuppa-alla-valpellinese" data-facets="burro carne pane" data-type="primi" data-search="zuppa alla valpellinese primi zuppa zuppa di pane fontina verza pane raffermo valle d&#39;aosta pane carne burro  200 g pane bianco raffermo a fette (circa) 250 g fontina 200 g verza 1 l brodo di carne di manzo 50 g burro cannella in polvere q.b. sale q.b. pepe q.b.">
 <img src="/img/zuppa-alla-valpellinese-d139173f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zuppa alla valpellinese</span>
@@ -271,7 +271,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zuppa-di-cipolle-gratinata">
+<a class="card" href="/r/zuppa-di-cipolle-gratinata" data-facets="burro carne pane" data-type="primi" data-search="zuppa di cipolle gratinata (soupe a l&#39;oignon) primi zuppa gratinata cipolle gruyere francia pane carne burro  300 g cipolle gialle 1,5 l brodo di pollo o di manzo 30 g burro (oppure 3 cucchiai di olio) 1 cucchiaio abbondante di farina 4-6 fette sottili di pane 50 g gruyere o emmental grattugiato sale e pepe">
 <img src="/img/zuppa-di-cipolle-gratinata-5a358308.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zuppa di cipolle gratinata (soupe à l&#39;oignon)</span>
@@ -280,7 +280,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zuppa-di-pane-tedesca">
+<a class="card" href="/r/zuppa-di-pane-tedesca" data-facets="burro carne pane" data-type="primi" data-search="zuppa di pane tedesca (brotsuppe) primi zuppa brodo pane raffermo cipolle germania pane carne burro  200 g pane raffermo (per esempio pane contadino) 2-3 cucchiai di burro 2 cipolle 1 spicchio d&#39;aglio 1/2 cucchiaino di carvi macinato (kummel) 1,5 l brodo di carne 1/2 cucchiaino di maggiorana sale pepe 1 mazzetto di erba cipollina">
 <img src="/img/zuppa-di-pane-tedesca-9bc01e93.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zuppa di pane tedesca (Brotsuppe)</span>
@@ -289,7 +289,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zuppa-gallurese">
+<a class="card" href="/r/zuppa-gallurese" data-facets="carne pane" data-type="primi" data-search="zuppa gallurese (suppa cuata) primi zuppa zuppa di pane pecorino sardo casizolu sardegna gallura pane carne  1 l brodo di pecora 300 g formaggio casizolu 300 g pecorino sardo 280 g pane raffermo pepe q.b.">
 <img src="/img/zuppa-gallurese-ad4ca4d5.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zuppa gallurese (suppa cuata)</span>
@@ -303,7 +303,7 @@
 <h2>Secondi</h2>
 <div class="cards">
 
-<a class="card" href="/r/budino-di-pane-salato-savoury-bread-and-butter-pudding">
+<a class="card" href="/r/budino-di-pane-salato-savoury-bread-and-butter-pudding" data-facets="burro carne latte pane uova" data-type="secondi" data-search="budino di pane salato (savoury bread and butter pudding) secondi budino salato pane bianco bacon peperone riciclo regno unito pane carne uova latte burro base 6-8 fette di pane bianco 50 g burro 2 uova 400 ml latte 1 pizzico di sale aggiunte salate 1 cucchiaio di olio di semi 1/2 cipolla, tritata finemente 2 fette di bacon (back bacon) 1 peperone rosso, privato dei semi e tagliato a dadini 25 g formaggio bianco grattugiato">
 <img src="/img/budino-di-pane-salato-savoury-bread-and-butter-pudding-5f4df1a2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino di pane salato (savoury bread and butter pudding)</span>
@@ -312,7 +312,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/fatteh-di-ceci">
+<a class="card" href="/r/fatteh-di-ceci" data-facets="burro frutta-secca pane" data-type="secondi" data-search="fatteh di ceci (pane pita, ceci e yogurt) secondi fatteh ceci yogurt pane arabo pinoli libano pane burro frutta secca  250 g ceci in scatola 2 pani arabi (khubz, pita o lavash) 1 spicchio di aglio 250 g yogurt succo di 1/2 limone paprica e cumino q.b. 30 g pinoli olio di oliva q.b. menta q.b. sale q.b. burro chiarificato q.b.">
 <img src="/img/fatteh-di-ceci-faff04a3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Fatteh di ceci (pane pita, ceci e yogurt)</span>
@@ -321,7 +321,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/fette-di-pane-al-formaggio-del-vallese">
+<a class="card" href="/r/fette-di-pane-al-formaggio-del-vallese" data-facets="alcol burro latte pane uova" data-type="secondi" data-search="fette di pane al formaggio del vallese (walliser kaseschnitten) secondi pane al formaggio raclette formaggio svizzera pane uova latte burro alcol  burro per rosolare (bratbutter) 8 fette di pane grandi 0,5 dl vino bianco composto di formaggio 500 g raclette del vallese aop 3 uova 0,5 dl panna 1 dl vino bianco sale e pepe">
 <img src="/img/fette-di-pane-al-formaggio-del-vallese-02905f96.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Fette di pane al formaggio del Vallese (Walliser Käseschnitten)</span>
@@ -330,7 +330,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/frittata-di-pane-raffermo">
+<a class="card" href="/r/frittata-di-pane-raffermo" data-facets="latte pane uova" data-type="secondi" data-search="frittata di pane raffermo secondi frittata pane raffermo pecorino parmigiano riciclo pane uova latte  6 uova 200 g pane raffermo 200 g latte 70 g pecorino grattugiato 50 g parmigiano grattugiato 1 cucchiaio di olio extravergine di oliva pepe q.b. 1 ciuffo di prezzemolo tritato">
 <img src="/img/frittata-di-pane-raffermo-a023df90.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Frittata di pane raffermo</span>
@@ -339,7 +339,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/migas-extremenas">
+<a class="card" href="/r/migas-extremenas" data-facets="carne fritto pane" data-type="secondi" data-search="migas extremenas (briciole di pane fritte con chorizo) secondi migas pane raffermo chorizo pancetta peperone spagna pane carne fritto  250 g pane raffermo a cubetti 125 ml acqua salata 100 ml olio extravergine d&#39;oliva 2 chorizo freschi 2 fette di pancetta 1 peperone rosso 3 spicchi d&#39;aglio prezzemolo fresco">
 <img src="/img/migas-extremenas-9629358e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Migas extremeñas (briciole di pane fritte con chorizo)</span>
@@ -348,7 +348,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mozzarella-in-carrozza">
+<a class="card" href="/r/mozzarella-in-carrozza" data-facets="carne fritto latte pane uova" data-type="secondi" data-search="mozzarella in carrozza secondi mozzarella in carrozza mozzarella pancarre campania pane carne uova latte fritto  8 fette di pancarre 250 g mozzarella fiordilatte 120 g prosciutto cotto (facoltativo) 100 ml latte 2 uova (medie) farina q.b. pangrattato q.b. olio di semi di arachide (per friggere) sale e pepe q.b.">
 <img src="/img/mozzarella-in-carrozza-b3d5f183.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mozzarella in carrozza</span>
@@ -357,7 +357,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pallotte-cacio-e-ova">
+<a class="card" href="/r/pallotte-cacio-e-ova" data-facets="fritto latte pane uova" data-type="secondi" data-search="pallotte cacio e ova secondi pallotte polpette pane raffermo pecorino parmigiano pomodoro abruzzo riciclo pane uova latte fritto per le pallotte 300 g mollica di pane raffermo 3 uova (grandi, oppure 4 piccole) 200 g pecorino romano 100 g parmigiano reggiano 150 ml latte 1 mazzetto di prezzemolo 1 spicchio di aglio sale q.b. pepe nero q.b. olio di semi di arachide q.b. (per friggere) per la salsa 800 g pomodori pelati 1 spicchio di aglio 1 ciuffo di basilico sale q.b. 2 cucchiai di olio extravergine di oliva">
 <img src="/img/pallotte-cacio-e-ova-4cf4b163.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pallotte cacio e ova</span>
@@ -366,7 +366,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/polpette-di-pane-al-sugo">
+<a class="card" href="/r/polpette-di-pane-al-sugo" data-facets="pane uova" data-type="secondi" data-search="polpette di pane al sugo secondi polpette di pane pane raffermo pecorino pomodoro riciclo pane uova  400 g panini all&#39;olio raffermi o secchi (oppure pane raffermo) 50 g pecorino romano (oppure pecorino abruzzese stagionato) 2 uova (medie) 100 g pangrattato (ne puo servire meno o poco di piu) 150 g polpa di pomodoro finissima 1 bicchiere d&#39;acqua 1 filo di olio extravergine d&#39;oliva 1 spicchio di aglio rosso di sulmona (facoltativo) prezzemolo q.b. sale q.b. olio di semi q.b. (solo per friggere le polpette, facoltativo)">
 <img src="/img/polpette-di-pane-al-sugo-43137c4b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Polpette di pane al sugo</span>
@@ -380,7 +380,7 @@
 <h2>Contorni</h2>
 <div class="cards">
 
-<a class="card" href="/r/canederli-a-rotolo">
+<a class="card" href="/r/canederli-a-rotolo" data-facets="burro latte pane uova" data-type="contorni" data-search="canederli a rotolo (serviettenknodel) contorni canederli knodel panini raffermi germania pane uova latte burro  250 g panini raffermi (circa 5 panini) 1 cipolla 250 ml latte 2 cucchiai di burro 2 uova (taglia m) 2 cucchiai di prezzemolo tritato 1 cucchiaino di sale e pepe 1 pizzico di noce moscata">
 <img src="/img/canederli-a-rotolo-a569359d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Canederli a rotolo (Serviettenknödel)</span>
@@ -389,7 +389,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/fattoush">
+<a class="card" href="/r/fattoush" data-facets="pane" data-type="contorni" data-search="fattoush (insalata libanese con pane) contorni fattoush insalata pane guttiau sumac libano pane  1 lattuga romana 3 pomodori 1 cetriolo 100 g pane guttiau 3 cipollotti 10 ravanelli 2 rametti di menta 1 mazzetto di prezzemolo 1 spicchio di aglio 3 cucchiai di melassa di melograno 3 cucchiaini di sumac succo di 1/2 limone olio extravergine di oliva q.b. sale q.b.">
 <img src="/img/fattoush-66b63cb6.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Fattoush (insalata libanese con pane)</span>
@@ -398,7 +398,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/houskove-knedliky">
+<a class="card" href="/r/houskove-knedliky" data-facets="latte pane uova" data-type="contorni" data-search="houskove knedliky (canederli lievitati cechi) contorni canederli knedliky panini lievito repubblica ceca pane uova latte  500 g farina semigrossa (polohruba) 250 ml latte tiepido (o quanto serve) 7 g lievito di birra secco 1 uovo 2 panini (rohliky) 1 cucchiaino di zucchero semolato 1 cucchiaino raso di sale">
 <img src="/img/houskove-knedliky-6a7f2a60.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Houskové knedlíky (canederli lievitati cechi)</span>
@@ -407,7 +407,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/ripieno-inglese-di-pane-cipolla-e-salvia-sage-and-onion-stuffing">
+<a class="card" href="/r/ripieno-inglese-di-pane-cipolla-e-salvia-sage-and-onion-stuffing" data-facets="burro pane uova" data-type="contorni" data-search="ripieno inglese di pane, cipolla e salvia (sage and onion stuffing) contorni ripieno cipolla salvia mollica di pane regno unito pane burro uova  1 cucchiaio di burro 1 cucchiaio di olio 1 cipolla grande, tritata finemente 1 foglia di alloro 1 spicchio d&#39;aglio, schiacciato 1 cucchiaio e mezzo di salvia secca o fresca, tritata finemente 180 g mollica di pane fresca 1 uovo grande, leggermente sbattuto 1 pizzico di sale">
 <img src="/img/ripieno-inglese-di-pane-cipolla-e-salvia-sage-and-onion-stuffing-dc36bb84.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Ripieno inglese di pane, cipolla e salvia (sage and onion stuffing)</span>
@@ -421,7 +421,7 @@
 <h2>Torte salate</h2>
 <div class="cards">
 
-<a class="card" href="/r/pizza-di-scarola">
+<a class="card" href="/r/pizza-di-scarola" data-facets="frutta-secca" data-type="torte-salate" data-search="pizza di scarola torte salate pizza di scarola torta salata scarola olive uvetta pinoli capperi campania frutta secca per l&#39;impasto 500 g farina 00 300 ml acqua 25 g lievito di birra fresco 15 g sale 1 cucchiaino di zucchero semolato per il ripieno 1 kg scarole 50 g olive nere snocciolate 50 g uvetta 30 g pinoli 30 g capperi dissalati 2 spicchi di aglio 1 peperoncino pepe q.b. olio extravergine di oliva q.b. sale q.b. servono inoltre olio extravergine di oliva q.b. farina 00 per il piano di lavoro">
 <img src="/img/pizza-di-scarola-897d17c5.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pizza di scarola</span>
@@ -430,7 +430,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-salata-di-pane-raffermo-e-scamorza">
+<a class="card" href="/r/torta-salata-di-pane-raffermo-e-scamorza" data-facets="latte pane" data-type="torte-salate" data-search="torta salata di pane raffermo e scamorza torte salate torta salata pane raffermo scamorza parmigiano riciclo pane latte  300 g pane raffermo 250 g latte 250 g acqua sale q.b. 4 fette di scamorza 50 g parmigiano grattugiato 30 g pane grattugiato 1 filo di olio extravergine d&#39;oliva">
 <img src="/img/torta-salata-di-pane-raffermo-e-scamorza-88d8002f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta salata di pane raffermo e scamorza</span>
@@ -444,7 +444,7 @@
 <h2>Dolci</h2>
 <div class="cards">
 
-<a class="card" href="/r/afghan-biscuits">
+<a class="card" href="/r/afghan-biscuits" data-facets="burro cacao frutta-secca" data-type="dolci" data-search="afghan biscuits (biscotti neozelandesi al cacao e corn flakes) dolci biscotti corn flakes nuova zelanda cacao burro frutta secca biscotti 150 g burro non salato, a pezzetti 110 g zucchero semolato fine (caster sugar) 185 g farina 00 25 g cacao amaro in polvere 60 g corn flakes 1/4 di cucchiaino di sale noci tostate tritate, per decorare glassa al cioccolato 160 g zucchero a velo 2 cucchiai di cacao amaro in polvere">
 <img src="/img/afghan-biscuits-58bcd242.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Afghan biscuits (biscotti neozelandesi al cacao e corn flakes)</span>
@@ -453,7 +453,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/amaretti-morbidi">
+<a class="card" href="/r/amaretti-morbidi" data-facets="frutta-secca uova" data-type="dolci" data-search="amaretti morbidi dolci biscotti amaretti mandorle frutta secca uova  200 g farina di mandorle (oppure 150 g di mandorle pelate e 50 g di mandorle amare) 185 g zucchero (200 g se usi mandorle pelate e amare) 2 albumi (di uova medie a temperatura ambiente) 1 pizzico di sale zucchero a velo q.b.">
 <img src="/img/amaretti-morbidi-279c41e8.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Amaretti morbidi</span>
@@ -462,7 +462,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/amor-polenta">
+<a class="card" href="/r/amor-polenta" data-facets="alcol burro frutta-secca uova" data-type="dolci" data-search="amor polenta dolci torta farina di mais farina di mandorle uova burro frutta secca alcol  100 g farina di mais fioretto 80 g farina 00 70 g farina di mandorle 100 g burro 150 g zucchero 3 uova 10 g rum 1 cucchiaino di essenza di vaniglia 8 g lievito per dolci zucchero a velo, per decorare">
 <img src="/img/amor-polenta-2b2a01f9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Amor polenta</span>
@@ -471,7 +471,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/anzac-biscuits">
+<a class="card" href="/r/anzac-biscuits" data-facets="burro" data-type="dolci" data-search="anzac biscuits (biscotti australiani di avena e cocco) dolci biscotti avena cocco golden syrup australia nuova zelanda burro  85 g fiocchi d&#39;avena (porridge oats) 85 g cocco rape (desiccated coconut) 100 g farina 00 100 g zucchero semolato fine (caster sugar) 100 g burro, piu altro per imburrare le teglie 1 cucchiaio di golden syrup 1 cucchiaino di bicarbonato di sodio">
 <img src="/img/anzac-biscuits-1d8b75b5.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Anzac biscuits (biscotti australiani di avena e cocco)</span>
@@ -480,7 +480,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/apfelkuchle">
+<a class="card" href="/r/apfelkuchle" data-facets="fritto latte mele uova" data-type="dolci" data-search="apfelkuchle (anelli di mela in pastella) dolci frittelle dolce fritto anelli di mela germania mele uova latte fritto per la pastella 2 uova medie 25 g zucchero 180 ml latte (quantita indicativa) 150 g farina inoltre 4 mele medie 2 cucchiai di succo di limone 20 g amido di mais o fecola (facoltativo, quantita indicativa) 750 ml olio per friggere (quantita indicativa) zucchero alla cannella">
 <img src="/img/apfelkuchle-70d40669.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Apfelküchle (anelli di mela in pastella)</span>
@@ -489,7 +489,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/baci-di-dama">
+<a class="card" href="/r/baci-di-dama" data-facets="frutta-secca uova" data-type="dolci" data-search="baci di dama dolci biscotti biscotti farciti nocciole crema di nocciole olio di semi frutta secca uova  200 g nocciole 200 g zucchero 160 g olio di semi di girasole 270 g farina 00 1 uovo 110 g crema di nocciole per farcire">
 <img src="/img/baci-di-dama-9290a804.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Baci di dama</span>
@@ -498,7 +498,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/bakewell-tart">
+<a class="card" href="/r/bakewell-tart" data-facets="burro frutta-secca latte marmellata uova" data-type="dolci" data-search="bakewell tart dolci crostata mandorle lamponi marmellata regno unito burro frutta secca latte uova pasta frolla 250 g farina 00, piu altra per stendere 1/4 di cucchiaino di sale marino fine 2 cucchiai di zucchero a velo 140 g burro freddo a cubetti 2 tuorli sbattuti 4 cucchiai di acqua fredda ripieno 100 g burro salato morbido 100 g zucchero semolato 150 g farina di mandorle 1 cucchiaino di aroma di mandorla 2 uova medie sbattute 3 cucchiai di marmellata di lamponi 50 g mandorle a lamelle glassa 80 g zucchero a velo 1-2 cucchiaini di acqua per servire panna o crema inglese (facoltativo)">
 <img src="/img/bakewell-tart-cb1d7444.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Bakewell tart</span>
@@ -507,7 +507,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/banana-bread">
+<a class="card" href="/r/banana-bread" data-facets="burro uova" data-type="dolci" data-search="banana bread (plumcake alle banane) dolci plumcake banane regno unito uova burro  140 g burro morbido, piu altro per lo stampo 140 g zucchero semolato fine (caster sugar) 2 uova grandi, sbattute 140 g farina self-raising (con lievito incorporato) 1 cucchiaino di lievito per dolci 2 banane molto mature, schiacciate 50 g zucchero a velo una manciata di chips di banana essiccate, per decorare">
 <img src="/img/banana-bread-5fb5d9c0.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Banana bread (plumcake alle banane)</span>
@@ -516,7 +516,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-ai-fiocchi-d-avena">
+<a class="card" href="/r/biscotti-ai-fiocchi-d-avena" data-facets="burro frutta-secca uova" data-type="dolci" data-search="biscotti ai fiocchi d&#39;avena dolci biscotti fiocchi d&#39;avena mandorle frutta secca burro uova  300 g fiocchi d&#39;avena 125 g zucchero 125 g burro ammorbidito 50 g mandorle 1 uovo 1 tuorlo 1 cucchiaino di cannella in polvere scorza grattugiata di 1 limone non trattato 8 g lievito in polvere per dolci">
 <img src="/img/biscotti-ai-fiocchi-d-avena-e493d855.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti ai fiocchi d&#39;avena</span>
@@ -525,7 +525,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-al-cocco-con-soli-albumi">
+<a class="card" href="/r/biscotti-al-cocco-con-soli-albumi" data-facets="uova" data-type="dolci" data-search="biscotti al cocco con soli albumi dolci biscotti cocco albumi uova  90 g albumi (circa 3 albumi) 100 g zucchero 50 g farina di cocco">
 <img src="/img/biscotti-al-cocco-con-soli-albumi-69ce3c70.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti al cocco con soli albumi</span>
@@ -534,7 +534,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-al-cucchiaio">
+<a class="card" href="/r/biscotti-al-cucchiaio" data-facets="burro frutta-secca latte uova" data-type="dolci" data-search="biscotti al cucchiaio dolci biscotti a cucchiaiate farina di mandorle cannella burro uova latte frutta secca  250 g farina 00 50 g farina di mandorle 180 g zucchero di canna 100 g latte intero (a temperatura ambiente) 50 g burro morbido 55 g uova (circa 1 uovo medio, a temperatura ambiente) 4 g lievito in polvere per dolci 1 pizzico di cannella in polvere 1 pizzico di sale fino">
 <img src="/img/biscotti-al-cucchiaio-77200ce6.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti al cucchiaio</span>
@@ -543,7 +543,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-al-latte">
+<a class="card" href="/r/biscotti-al-latte" data-facets="burro latte uova" data-type="dolci" data-search="biscotti al latte dolci biscotti frollini vaniglia burro latte uova  360 g farina 00 140 g zucchero 100 g latte intero a temperatura ambiente 50 g burro morbido 1 uovo medio 1 baccello di vaniglia 1 pizzico di sale fino 5 g lievito per dolci per spennellare latte intero q.b.">
 <img src="/img/biscotti-al-latte-82b051fa.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti al latte</span>
@@ -552,7 +552,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-all-avena">
+<a class="card" href="/r/biscotti-all-avena" data-facets="burro uova" data-type="dolci" data-search="biscotti all&#39;avena (haferkekse) dolci biscotti avena germania burro uova  200 g burro morbido 1 uovo biologico (taglia m) 180 g zucchero 1 bustina di zucchero vanigliato 1 pizzico di sale 250 g fiocchi d&#39;avena grossi 100 g farina 00 1 cucchiaino di lievito per dolci cannella, a piacere">
 <img src="/img/biscotti-all-avena-56bb51cc.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti all&#39;avena (Haferkekse)</span>
@@ -561,7 +561,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-alla-ricotta">
+<a class="card" href="/r/biscotti-alla-ricotta" data-facets="ricotta uova" data-type="dolci" data-search="biscotti alla ricotta dolci biscotti morbidi limone ricotta uova  250 g ricotta vaccina 250 g farina 00 150 g zucchero 55 g uova (circa 1 uovo medio) 8 g lievito in polvere per dolci scorza di 1 limone zucchero a velo q.b. (per spolverizzare)">
 <img src="/img/biscotti-alla-ricotta-5d3ed9ef.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti alla ricotta</span>
@@ -570,7 +570,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-alle-nocciole">
+<a class="card" href="/r/biscotti-alle-nocciole" data-facets="frutta-secca uova" data-type="dolci" data-search="biscotti alle nocciole dolci biscotti nocciole olio di semi uova frutta secca impasto 120 g nocciole tostate 1 uovo 100 g zucchero 80 ml olio di semi 150 g farina 00 8 g lievito per dolci decorazione nocciole intere q.b.">
 <img src="/img/biscotti-alle-nocciole-b571b16c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti alle nocciole</span>
@@ -579,7 +579,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-allo-zenzero">
+<a class="card" href="/r/biscotti-allo-zenzero" data-facets="burro" data-type="dolci" data-search="biscotti allo zenzero (ginger nuts) dolci biscotti zenzero cannella golden syrup regno unito burro  100 g farina self-raising (con lievito incorporato) 1 cucchiaino raso di bicarbonato di sodio 1 cucchiaino e mezzo di zenzero in polvere 1/2 cucchiaino di cannella in polvere 50 g zucchero di canna dorato fine (golden caster sugar) 50 g burro non salato 2 cucchiai di golden syrup">
 <img src="/img/biscotti-allo-zenzero-869baaec.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti allo zenzero (ginger nuts)</span>
@@ -588,7 +588,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-con-banane-mature">
+<a class="card" href="/r/biscotti-con-banane-mature" data-facets="cacao" data-type="dolci" data-search="biscotti con banane mature dolci biscotti banane cocco cacao  1 banana matura 100 g farina 00 50 g cocco rape 50 g gocce di cioccolato fondente 40 g zucchero 20 g olio di semi di girasole 1 cucchiaino di lievito in polvere per dolci">
 <img src="/img/biscotti-con-banane-mature-15d6800d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti con banane mature</span>
@@ -597,7 +597,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-con-gocce-di-cioccolato">
+<a class="card" href="/r/biscotti-con-gocce-di-cioccolato" data-facets="burro cacao uova" data-type="dolci" data-search="biscotti con gocce di cioccolato dolci biscotti gocce di cioccolato cacao burro uova  250 g farina 00 1 uovo (medio) 100 g zucchero di canna 90 g burro morbido 50 g gocce di cioccolato 12 cucchiaino di bicarbonato 1 pizzico di sale fino 12 cucchiaino di estratto di vaniglia">
 <img src="/img/biscotti-con-gocce-di-cioccolato-60b65f61.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti con gocce di cioccolato</span>
@@ -606,7 +606,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-da-inzuppo">
+<a class="card" href="/r/biscotti-da-inzuppo" data-facets="uova" data-type="dolci" data-search="biscotti da inzuppo dolci biscotti da inzuppo limone olio di semi uova  500 g farina 00 180 g zucchero 100 g olio di semi di girasole 2 uova 16 g lievito in polvere per dolci scorza di 1 limone per ricoprire zucchero q.b.">
 <img src="/img/biscotti-da-inzuppo-03aeb01e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti da inzuppo</span>
@@ -615,7 +615,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-morbidi-limone-e-arancia">
+<a class="card" href="/r/biscotti-morbidi-limone-e-arancia" data-facets="burro uova" data-type="dolci" data-search="biscotti morbidi limone e arancia dolci biscotti biscotti morbidi limone arancia burro uova  100 g burro 70 g uova a temperatura ambiente (circa 1 uovo medio) 320 g farina 00 90 g zucchero semolato 1 limone non trattato 1 arancia non trattata 3 g lievito per dolci per spolverizzare 60 g zucchero semolato (per rotolare i biscotti) zucchero a velo q.b.">
 <img src="/img/biscotti-morbidi-limone-e-arancia-a0ee53e9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti morbidi limone e arancia</span>
@@ -624,7 +624,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-occhi-di-bue-marmellata">
+<a class="card" href="/r/biscotti-occhi-di-bue-marmellata" data-facets="burro marmellata uova" data-type="dolci" data-search="biscotti occhi di bue dolci marmellata di susine biscotti frolla burro marmellata uova  170 g farina 00 (circa) 80 g burro 100 g zucchero a velo 2 tuorli piccoli 1/2 bacca di vaniglia (o 1 bustina) 1 pizzico di sale 250 g marmellata zucchero a velo per spolverare">
 <img src="/img/biscotti-occhi-di-bue-marmellata-7d5feeb9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti occhi di bue</span>
@@ -633,7 +633,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-pere-e-cioccolato">
+<a class="card" href="/r/biscotti-pere-e-cioccolato" data-facets="cacao uova" data-type="dolci" data-search="biscotti pere e cioccolato dolci biscotti pere cioccolato olio di semi uova cacao per l&#39;impasto 1 uovo 150 g zucchero 100 ml olio di semi 300 g farina 00 150 g pere a pezzetti 100 g gocce di cioccolato 75 ml succo di limone 8 g lievito per dolci per decorare zucchero semolato q.b.">
 <img src="/img/biscotti-pere-e-cioccolato-1252dedc.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti pere e cioccolato</span>
@@ -642,7 +642,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/biscotti-uvetta-e-pinoli">
+<a class="card" href="/r/biscotti-uvetta-e-pinoli" data-facets="burro frutta-secca uova" data-type="dolci" data-search="biscotti uvetta e pinoli dolci biscotti uvetta pinoli burro frutta secca uova  100 g uvetta 100 ml acqua 100 g burro a temperatura ambiente 100 g zucchero 1 uovo 200 g farina 00 8 g lievito per dolci 50 g pinoli">
 <img src="/img/biscotti-uvetta-e-pinoli-3ac968a7.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Biscotti uvetta e pinoli</span>
@@ -651,7 +651,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/bolinho-de-chuva">
+<a class="card" href="/r/bolinho-de-chuva" data-facets="fritto latte uova" data-type="dolci" data-search="bolinho de chuva (frittelle brasiliane alla cannella) dolci frittelle dolce fritto cannella brasile uova latte fritto impasto 300 g farina 2 uova 1 bicchiere di latte 200 g zucchero cannella in polvere a piacere 2 litri di olio per friggere 1 cucchiaio di lievito in polvere per dolci copertura 100 g zucchero cannella in polvere a piacere">
 <img src="/img/bolinho-de-chuva-29c0b500.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Bolinho de chuva (frittelle brasiliane alla cannella)</span>
@@ -660,7 +660,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/bostock">
+<a class="card" href="/r/bostock" data-facets="burro frutta-secca pane uova" data-type="dolci" data-search="bostock (fette di brioche con crema di mandorle) dolci brioche mandorle francia burro frutta secca pane uova  1 brioche zucchero a velo, per spolverare sciroppo 1 arancia 100 g zucchero 100 g acqua 100 g sciroppo di zucchero di canna 1 baccello di vaniglia crema di mandorle 42 g burro morbido 50 g zucchero 50 g di uovo (circa 1 uovo) 50 g farina di mandorle scorza di 1 arancia croccante alle mandorle 100 g mandorle a lamelle 100 g zucchero 20 g albumi">
 <img src="/img/bostock-7dfb94e3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Bostock (fette di brioche con crema di mandorle)</span>
@@ -669,7 +669,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/boterkoek">
+<a class="card" href="/r/boterkoek" data-facets="burro uova" data-type="dolci" data-search="boterkoek (torta olandese al burro) dolci torta farina paesi bassi burro uova  200 g burro non salato (meglio se di buona qualita) 200 g zucchero semolato fine 8 g zucchero vanigliato 250 g farina 1 uovo, piu 1 uovo per spennellare 1 pizzico di sale">
 <img src="/img/boterkoek-af549e4d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Boterkoek (torta olandese al burro)</span>
@@ -678,7 +678,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/brutti-ma-buoni-dolcetti-alle-nocciole">
+<a class="card" href="/r/brutti-ma-buoni-dolcetti-alle-nocciole" data-facets="frutta-secca uova" data-type="dolci" data-search="brutti ma buoni (dolcetti alle nocciole) dolci biscotti meringa nocciole albumi uova frutta secca  2 albumi sale fino q.b. (un pizzico) 150 g zucchero 150 g granella di nocciole">
 <img src="/img/brutti-ma-buoni-dolcetti-alle-nocciole-8174ae0c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Brutti ma buoni (dolcetti alle nocciole)</span>
@@ -687,7 +687,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-al-cioccolato">
+<a class="card" href="/r/budino-al-cioccolato" data-facets="burro cacao frutta-secca latte" data-type="dolci" data-search="budino al cioccolato dolci budino dolce al cucchiaio cioccolato fondente amido di mais amaretti cacao frutta secca burro latte per il budino 250 g latte intero 70 g cioccolato fondente 50 g zucchero 40 g burro 20 g amido di mais (maizena) per decorare 16 g amaretti cioccolato fondente in scaglie q.b. melagrana q.b.">
 <img src="/img/budino-al-cioccolato-42aac094.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino al cioccolato</span>
@@ -696,7 +696,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-al-cioccolato-della-nonna">
+<a class="card" href="/r/budino-al-cioccolato-della-nonna" data-facets="cacao latte uova" data-type="dolci" data-search="budino al cioccolato della nonna dolci budino cioccolato fondente germania cacao uova latte  100 g cioccolato fondente 1 tuorlo (uovo taglia m) 1 pizzico di sale 2 cucchiai di zucchero 30 g amido di mais 10 cucchiai di latte (6 per l&#39;amido e 4 per il tuorlo) 400 ml latte">
 <img src="/img/budino-al-cioccolato-della-nonna-404c431b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino al cioccolato della nonna</span>
@@ -705,7 +705,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-alla-vaniglia">
+<a class="card" href="/r/budino-alla-vaniglia" data-facets="latte uova" data-type="dolci" data-search="budino alla vaniglia dolci budino dolce al cucchiaio vaniglia amido di mais latte uova  500 ml latte 2 uova 120 g zucchero 30 g amido di mais 2 cucchiaini di estratto di vaniglia">
 <img src="/img/budino-alla-vaniglia-2f42f0bb.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino alla vaniglia</span>
@@ -714,7 +714,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-alle-fragole">
+<a class="card" href="/r/budino-alle-fragole" data-facets="latte" data-type="dolci" data-search="budino alle fragole dolci budino dolce al cucchiaio fragole latte  500 g fragole 250 g latte intero 150 g zucchero 40 g amido di mais (maizena) 1 limone (serve il succo di mezzo limone)">
 <img src="/img/budino-alle-fragole-43deba79.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino alle fragole</span>
@@ -723,7 +723,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-di-cachi-e-cacao">
+<a class="card" href="/r/budino-di-cachi-e-cacao" data-facets="cacao frutta-secca" data-type="dolci" data-search="budino di cachi e cacao dolci budino dolce al cucchiaio senza cottura cachi cacao frutta secca  700 g cachi maturi 40 g cacao amaro in polvere per decorare cacao amaro in polvere q.b. granella di mandorle o di frutta secca mista, caramellata q.b.">
 <img src="/img/budino-di-cachi-e-cacao-532460f1.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino di cachi e cacao</span>
@@ -732,7 +732,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-pane-marmellata">
+<a class="card" href="/r/budino-pane-marmellata" data-facets="burro latte marmellata pane uova" data-type="dolci" data-search="budino di pane con marmellata dolci pane raffermo riciclo marmellata budino burro latte pane uova  500 ml latte 150 g pane raffermo 60 g zucchero 30 g latte condensato 2 uova scorza di 1 limone 150 g marmellata densa burro e pangrattato per lo stampo">
 <img src="/img/budino-pane-marmellata-91f2b295.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino di pane con marmellata</span>
@@ -741,7 +741,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/budino-di-semolino">
+<a class="card" href="/r/budino-di-semolino" data-facets="latte uova" data-type="dolci" data-search="budino di semolino (griepudding) dolci budino semolino germania latte uova  600 ml latte 100 g semolino di grano duro 1 uovo (taglia m) 40 g zucchero">
 <img src="/img/budino-di-semolino-98f3059e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Budino di semolino (Grießpudding)</span>
@@ -750,7 +750,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/cake-con-pere-e-amaretti">
+<a class="card" href="/r/cake-con-pere-e-amaretti" data-facets="frutta-secca uova" data-type="dolci" data-search="cake con pere e amaretti (torta di pere) dolci torta pere amaretti frutta secca uova  190 g farina 00 260 g uova (circa 5) 120 g olio di semi 180 g zucchero 10 g lievito per dolci 40 g amaretti 400 g pere coscia mondate zucchero a velo per guarnire q.b.">
 <img src="/img/cake-con-pere-e-amaretti-06c5cfde.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Cake con pere e amaretti (torta di pere)</span>
@@ -759,7 +759,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/cantucci">
+<a class="card" href="/r/cantucci" data-facets="frutta-secca uova" data-type="dolci" data-search="cantucci dolci biscotti biscotti secchi mandorle limone frutta secca uova  250 g farina 200 g zucchero 125 g mandorle con la buccia 2 uova 1 cucchiaino di lievito per dolci 1 cucchiaino di essenza di vaniglia 1 cucchiaino di scorza di limone grattugiata 1 pizzico di sale">
 <img src="/img/cantucci-6c11a966.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Cantucci</span>
@@ -768,7 +768,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/capirotada">
+<a class="card" href="/r/capirotada" data-facets="burro frutta-secca pane" data-type="dolci" data-search="capirotada (budino di pane messicano) dolci budino di pane pane raffermo piloncillo arachidi uvetta messico pane burro frutta secca  340 g piloncillo (zucchero di canna grezzo messicano) 360 ml acqua 1 stecca di cannella 2 chiodi di garofano 35 g uvetta 3 cucchiai di burro fuso 100 g queso cotija (formaggio messicano stagionato) 3 cucchiai di olio di semi 16 fette di pane bolillo (panino bianco messicano), spesse circa 8 mm, raffermo da almeno 2 giorni 35 g arachidi 2 cucchiai di burro a cubetti">
 <img src="/img/capirotada-9316385f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Capirotada (budino di pane messicano)</span>
@@ -777,7 +777,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/castagnaccio">
+<a class="card" href="/r/castagnaccio" data-facets="frutta-secca" data-type="dolci" data-search="castagnaccio dolci torta farina di castagne pinoli rosmarino frutta secca  500 g acqua 400 g farina di castagne 50 g pinoli 50 g zucchero 2 rametti di rosmarino 1 pizzico di sale 40 g olio extravergine d&#39;oliva nell&#39;impasto, piu q.b. per ungere la teglia">
 <img src="/img/castagnaccio-5728af33.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Castagnaccio</span>
@@ -786,7 +786,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/castagnole">
+<a class="card" href="/r/castagnole" data-facets="alcol burro fritto uova" data-type="dolci" data-search="castagnole (frittelle di carnevale) dolci castagnole frittelle dolce fritto carnevale limone uova burro alcol fritto  200 g farina 00 1 uovo grande 40 g burro morbido (oppure 30 g olio di semi di girasole) 50 g zucchero semolato 1 limone (buccia grattugiata) 1/2 bacca di vaniglia (i semi; in alternativa 1/2 bustina di vanillina) 1 cucchiaio di liquore strega (in alternativa liquore all&#39;anice o quello che preferisci) 6 g lievito in polvere per dolci 1 pizzico di sale 800 ml olio di semi di girasole per friggere (meta per volta: lo cambi a meta frittura) 200 g circa di zucchero semolato per condire">
 <img src="/img/castagnole-61e80fbe.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Castagnole (frittelle di Carnevale)</span>
@@ -795,7 +795,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/charlotte-di-mele">
+<a class="card" href="/r/charlotte-di-mele" data-facets="alcol burro latte mele pane" data-type="dolci" data-search="charlotte di mele (charlotte aux pommes) dolci mele charlotte pane in cassetta svizzera alcol burro latte pane  burro per lo stampo 100 ml vino bianco 800 g mele, sbucciate e tagliate a fettine sottili o a scaglie 1 stecca di cannella 2 chiodi di garofano 50 g zucchero 30 g uvetta 1 limone (succo e un po&#39; di scorza) 300 g pane in cassetta a fette circa 100 g burro fuso decorazione 200 ml panna montata qualche fettina di mela qualche perlina argentata di zucchero">
 <img src="/img/charlotte-di-mele-cdbfcdab.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Charlotte di mele (Charlotte aux pommes)</span>
@@ -804,7 +804,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/churros">
+<a class="card" href="/r/churros" data-facets="fritto" data-type="dolci" data-search="churros (bastoncini fritti spagnoli) dolci churros dolce fritto farina spagna fritto  300 g farina 440 g acqua 1 cucchiaino di sale olio di oliva delicato o di girasole, per friggere (abbondante) zucchero per spolverare">
 <img src="/img/churros-73a2af70.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Churros (bastoncini fritti spagnoli)</span>
@@ -813,7 +813,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/ciambella-morbida-marmellata-albicocche">
+<a class="card" href="/r/ciambella-morbida-marmellata-albicocche" data-facets="burro latte marmellata uova" data-type="dolci" data-search="ciambella morbida alla marmellata di albicocche dolci marmellata di albicocche ciambella torta burro latte marmellata uova  3 uova 50 ml latte 250 g farina 00 1 bustina vanillina 180 g zucchero semolato 100 ml olio di semi di girasole 1 limone (scorza grattugiata) 200 ml marmellata di albicocche 1 bustina lievito in polvere per dolci zucchero a velo burro e farina per lo stampo">
 <img src="/img/ciambella-morbida-marmellata-albicocche-2f5a4cb8.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Ciambella morbida alla marmellata di albicocche</span>
@@ -822,7 +822,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/ciambella-romagnola">
+<a class="card" href="/r/ciambella-romagnola" data-facets="alcol burro latte uova" data-type="dolci" data-search="ciambella romagnola dolci torta ciambella vin santo limone uova burro latte alcol per l&#39;impasto 2 uova 80 g burro fuso 50 g latte 30 g vin santo 120 g zucchero 400 g farina 8 g lievito per dolci 1 pizzico di sale fino scorza di limone grattugiata q.b. per decorare latte q.b. granella di zucchero q.b.">
 <img src="/img/ciambella-romagnola-ad551bf3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Ciambella romagnola</span>
@@ -831,7 +831,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/ciambelline-al-vino">
+<a class="card" href="/r/ciambelline-al-vino" data-facets="alcol" data-type="dolci" data-search="ciambelline al vino dolci biscotti vino bianco olio di semi alcol per i biscotti 370 g farina 100 g zucchero 100 ml vino bianco 100 ml olio di semi 1 cucchiaino di lievito per dolci per decorare zucchero semolato q.b.">
 <img src="/img/ciambelline-al-vino-787120cb.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Ciambelline al vino</span>
@@ -840,7 +840,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/ciambellone-ciliegie">
+<a class="card" href="/r/ciambellone-ciliegie" data-facets="uova" data-type="dolci" data-search="ciambellone con ciliegie dolci ciliegie ciambellone torta uova  250 g farina per dolci soffici 30 g fecola di patate 250 g ciliegie 60 g zucchero 3 uova a temperatura ambiente 60 ml olio di semi 1 fiala aroma al limone 1 bustina di lievito per dolci, meglio non vanigliato 1 pizzico di sale zucchero di canna q.b. zucchero a velo q.b.">
 <img src="/img/ciambellone-ciliegie-21c53d96.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Ciambellone con ciliegie</span>
@@ -849,7 +849,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/coppa-di-mascarpone-e-frutti-di-bosco">
+<a class="card" href="/r/coppa-di-mascarpone-e-frutti-di-bosco" data-facets="latte" data-type="dolci" data-search="coppa di mascarpone e frutti di bosco dolci dolce al cucchiaio coppa senza cottura mascarpone frutti di bosco panna latte  250 g mascarpone 120 g zucchero a velo 100 ml panna fresca liquida qualche goccia di estratto di vaniglia 1 limone 50 g zucchero 3 cucchiai di latte intero 100 g mirtilli 100 g ribes rosso 100 g lamponi">
 <img src="/img/coppa-di-mascarpone-e-frutti-di-bosco-22660847.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Coppa di mascarpone e frutti di bosco</span>
@@ -858,7 +858,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/coppette-di-yogurt-e-frutti-di-bosco">
+<a class="card" href="/r/coppette-di-yogurt-e-frutti-di-bosco" data-facets="" data-type="dolci" data-search="coppette di yogurt e frutti di bosco dolci dolce al cucchiaio coppa yogurt greco frutti di bosco miele muesli  450 g yogurt greco 1 cucchiaio abbondante di miele 250 g frutti di bosco (more, mirtilli, lamponi) 100 g muesli croccante 20 g zucchero 50 ml acqua 2 cucchiaini di amido di mais (maizena)">
 <img src="/img/coppette-di-yogurt-e-frutti-di-bosco-4a455dc0.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Coppette di yogurt e frutti di bosco</span>
@@ -867,7 +867,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-al-caffe">
+<a class="card" href="/r/crema-al-caffe" data-facets="latte" data-type="dolci" data-search="crema al caffe dolci crema dolce al cucchiaio senza cottura caffe panna latte  300 g panna fresca liquida (fredda di frigo) 70 g caffe della moka (da far raffreddare bene) 40 g zucchero">
 <img src="/img/crema-al-caffe-7aef91ad.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema al caffè</span>
@@ -876,7 +876,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-al-cioccolato-semplice">
+<a class="card" href="/r/crema-al-cioccolato-semplice" data-facets="burro cacao latte" data-type="dolci" data-search="crema al cioccolato semplice (budino al cioccolato) dolci dolce al cucchiaio budino cioccolato fondente francia cacao latte burro  1 nocciola di burro 60 g zucchero semolato 60 g farina 250 g cioccolato fondente 1 l latte">
 <img src="/img/crema-al-cioccolato-semplice-aabf16a2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema al cioccolato semplice (budino al cioccolato)</span>
@@ -885,7 +885,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-al-succo-di-mela">
+<a class="card" href="/r/crema-al-succo-di-mela" data-facets="latte uova" data-type="dolci" data-search="crema al succo di mela (sussmostcreme) dolci dolce al cucchiaio succo di mela panna svizzera uova latte  1 dl succo di mela (sussmost), da mescolare con l&#39;amido 2 cucchiai di amido di mais, leggermente colmi 2 uova, sbattute 5 dl succo di mela, da portare a bollore con limone e zucchero 12 limone, succo e scorza 2 cucchiai di zucchero 2 dl panna da montare">
 <img src="/img/crema-al-succo-di-mela-63d0014a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema al succo di mela (Süssmostcrème)</span>
@@ -894,7 +894,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-dessert-alla-vaniglia">
+<a class="card" href="/r/crema-dessert-alla-vaniglia" data-facets="latte uova" data-type="dolci" data-search="crema dessert alla vaniglia (budino cremoso) dolci dolce al cucchiaio budino vaniglia francia uova latte  1 bustina di zucchero vanigliato oppure 1 baccello di vaniglia 1 cucchiaio di estratto di vaniglia oppure vaniglia liquida 50 g zucchero 50 cl latte 2 tuorli 15 g amido di mais">
 <img src="/img/crema-dessert-alla-vaniglia-dbe08042.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema dessert alla vaniglia (budino cremoso)</span>
@@ -903,7 +903,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-di-quark-e-lamponi">
+<a class="card" href="/r/crema-di-quark-e-lamponi" data-facets="latte" data-type="dolci" data-search="crema di quark e lamponi dolci dolce al cucchiaio senza cottura lamponi quark panna svizzera latte purea di lamponi 250 g lamponi 1 bustina di zucchero vanigliato 1 cucchiaio di succo di limone crema 250 g quark 1,25 dl panna da montare">
 <img src="/img/crema-di-quark-e-lamponi-e3c783a7.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema di quark e lamponi</span>
@@ -912,7 +912,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-di-ricotta-e-pere">
+<a class="card" href="/r/crema-di-ricotta-e-pere" data-facets="latte ricotta" data-type="dolci" data-search="crema di ricotta e pere dolci dolce al cucchiaio pere panna biscotti ricotta latte  250 g ricotta 100 ml panna fresca da montare 50 g zucchero a velo 2 pere 8 biscotti digestive 3 cucchiai zucchero semolato (o di canna) 1 cucchiaino cannella in polvere">
 <img src="/img/crema-di-ricotta-e-pere-7dc480d7.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema di ricotta e pere</span>
@@ -921,7 +921,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-fior-di-latte">
+<a class="card" href="/r/crema-fior-di-latte" data-facets="latte" data-type="dolci" data-search="crema fior di latte dolci dolce al cucchiaio crema panna latte  250 ml latte 250 ml panna fresca 80 g zucchero 40 g amido di mais 1 bustina di vanillina">
 <img src="/img/crema-fior-di-latte-e53c5a8f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema fior di latte</span>
@@ -930,7 +930,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crema-fritta-marchigiana">
+<a class="card" href="/r/crema-fritta-marchigiana" data-facets="fritto latte uova" data-type="dolci" data-search="crema fritta marchigiana dolci crema fritta cremini fritti dolce fritto crema pasticcera marche limone latte uova fritto  600 ml latte 5 tuorli 180 g zucchero semolato 60 g farina 00 1 cucchiaino di polvere di vaniglia (o 1 bustina di vanillina) scorza di 1 limone bio olio di semi per friggere per la panatura farina 00 q.b. albumi q.b. pangrattato q.b.">
 <img src="/img/crema-fritta-marchigiana-9cbdfd65.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crema fritta marchigiana</span>
@@ -939,7 +939,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crostata-marmellata-fichi">
+<a class="card" href="/r/crostata-marmellata-fichi" data-facets="burro frutta-secca marmellata uova" data-type="dolci" data-search="crostata con marmellata di fichi dolci fichi marmellata di fichi marmellata crostata burro frutta secca uova  350 g marmellata di fichi 200 g farina 00, piu q.b. per spolvero 100 g zucchero 80 g burro a temperatura ambiente 30 g granella di mandorle 1 uovo medio 1 tuorlo medio">
 <img src="/img/crostata-marmellata-fichi-5718513f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crostata con marmellata di fichi</span>
@@ -948,7 +948,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crostata-marmellata-frolla">
+<a class="card" href="/r/crostata-marmellata-frolla" data-facets="burro marmellata uova" data-type="dolci" data-search="crostata di marmellata dolci marmellata crostata burro uova  500 g farina 00 250 g burro a temperatura ambiente 200 g zucchero a velo 140 g uova (circa 2 grandi) 4 g lievito in polvere per dolci 1 cucchiaino estratto di vaniglia 500 g marmellata a scelta">
 <img src="/img/crostata-marmellata-frolla-bef6e369.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crostata di marmellata</span>
@@ -957,7 +957,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crostata-pane-raffermo-marmellata">
+<a class="card" href="/r/crostata-pane-raffermo-marmellata" data-facets="burro latte marmellata pane uova" data-type="dolci" data-search="crostata di pane raffermo e marmellata dolci pane raffermo riciclo marmellata crostata burro latte pane uova  250 g pane raffermo 250 ml latte tiepido 50 g burro fuso 50 g zucchero 1 uovo scorza di 1 limone 250 g marmellata densa (albicocca, ciliegia, frutti di bosco) burro e pangrattato per lo stampo">
 <span class="card-ph" aria-hidden="true">C</span>
 <span class="card-body">
 <span class="card-title">Crostata di pane raffermo e marmellata</span>
@@ -966,7 +966,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crostata-di-ricotta">
+<a class="card" href="/r/crostata-di-ricotta" data-facets="burro cacao ricotta uova" data-type="dolci" data-search="crostata di ricotta dolci crostata ricotta cioccolato frolla burro cacao uova pasta frolla 350 g farina 00 140 g zucchero a velo 220 g burro freddo di frigorifero 2 tuorli 1 limone (scorza) burro e farina per lo stampo ripieno 500 g ricotta vaccina 175 g zucchero 2 tuorli 1 arancia (scorza) 1 pizzico di cannella in polvere 40 g gocce di cioccolato fondente">
 <img src="/img/crostata-di-ricotta-2c9a879a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crostata di ricotta</span>
@@ -975,7 +975,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crostata-morbida-fichi">
+<a class="card" href="/r/crostata-morbida-fichi" data-facets="uova" data-type="dolci" data-search="crostata morbida ai fichi dolci fichi crostata torta senza burro uova  2 uova 150 g zucchero 80 ml olio di semi 200 g farina 00 1 cucchiaino di essenza di vaniglia 1/2 bustina di lievito per dolci 4 fichi zucchero a velo">
 <img src="/img/crostata-morbida-fichi-6a1ca951.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crostata morbida ai fichi</span>
@@ -984,7 +984,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crostoli-chiacchiere-frappe-bugie">
+<a class="card" href="/r/crostoli-chiacchiere-frappe-bugie" data-facets="alcol burro fritto latte uova" data-type="dolci" data-search="crostoli (chiacchiere, frappe, bugie) dolci crostoli chiacchiere frappe bugie galani dolce fritto carnevale veneto limone uova burro latte alcol fritto  300 g farina 00 40 g zucchero 2 uova medie 60 g grappa 30 g burro fuso 2 cucchiai latte (solo se necessario) buccia grattugiata di 1 limone grande non trattato 1 pizzico di sale 1 l olio di semi di girasole per friggere zucchero a velo vanigliato per guarnire">
 <img src="/img/crostoli-chiacchiere-frappe-bugie-00fdb50d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crostoli (chiacchiere, frappe, bugie)</span>
@@ -993,7 +993,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/crumble-mele">
+<a class="card" href="/r/crumble-mele" data-facets="burro latte mele" data-type="dolci" data-search="crumble di mele (apple crumble) dolci crumble mele regno unito burro latte ripieno 575 g mele renette (circa 3 mele medie), sbucciate, private del torsolo e tagliate a fette spesse 1 cm 2 cucchiai di zucchero di canna dorato a grana fine (golden caster sugar) crumble 175 g farina 00 110 g zucchero di canna dorato a grana fine 110 g burro freddo 1 pizzico abbondante di sale copertura (facoltativa) 1 cucchiaio di fiocchi d&#39;avena 1 cucchiaio di zucchero demerara per servire panna fresca (double cream), clotted cream (panna rappresa inglese) o crema inglese (custard)">
 <img src="/img/crumble-mele-77634713.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crumble di mele (apple crumble)</span>
@@ -1002,7 +1002,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/creme-caramel">
+<a class="card" href="/r/creme-caramel" data-facets="latte uova" data-type="dolci" data-search="creme caramel (flan alle uova al caramello) dolci dolce al cucchiaio flan caramello francia uova latte  1 l latte intero 6 uova 100 g zucchero per il caramello 100 g zucchero acqua di fiori d&#39;arancio (facoltativa)">
 <img src="/img/creme-caramel-4760dbf3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Crème caramel (flan alle uova al caramello)</span>
@@ -1011,7 +1011,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/dolce-danese-mele-pangrattato-tostato-panna">
+<a class="card" href="/r/dolce-danese-mele-pangrattato-tostato-panna" data-facets="burro frutta-secca latte mele pane" data-type="dolci" data-search="dolce danese di mele, pangrattato tostato e panna (gammeldags blekage) dolci mele pangrattato dolce al cucchiaio danimarca burro frutta secca latte pane composta di mele 50 ml acqua 750 g mele sbucciate, a pezzetti 25 g burro 1 cucchiaio zucchero mezzo baccello di vaniglia (solo i semi) o vaniglia in pasta in quantita equivalente pangrattato tostato 75 g burro 100 g pangrattato 85 g zucchero 75 g amaretti secchi sbriciolati per finire 500 ml panna fresca da montare, montata">
 <img src="/img/dolce-danese-mele-pangrattato-tostato-panna-2af04c0b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Dolce danese di mele, pangrattato tostato e panna (Gammeldags æblekage)</span>
@@ -1020,7 +1020,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/dolcetti-al-cocco">
+<a class="card" href="/r/dolcetti-al-cocco" data-facets="uova" data-type="dolci" data-search="dolcetti al cocco (kokosbusserl) dolci biscotti cocco austria uova  4 albumi 250 g zucchero a velo 250 g cocco rape 1 goccio di succo di limone">
 <img src="/img/dolcetti-al-cocco-8838358c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Dolcetti al cocco (Kokosbusserl)</span>
@@ -1029,7 +1029,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/far-breton-con-prugne-secche">
+<a class="card" href="/r/far-breton-con-prugne-secche" data-facets="latte uova" data-type="dolci" data-search="far breton con prugne secche dolci dolce al forno flan prugne secche fiori d&#39;arancio francia uova latte  250 g farina 120 g zucchero 1 cucchiaio di acqua di fiori d&#39;arancio 150 g prugne secche denocciolate 4 uova 400 ml latte">
 <img src="/img/far-breton-con-prugne-secche-fee9251c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Far breton con prugne secche</span>
@@ -1038,7 +1038,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/fave-dei-morti">
+<a class="card" href="/r/fave-dei-morti" data-facets="alcol burro frutta-secca uova" data-type="dolci" data-search="fave dei morti dolci biscotti farina di mandorle frutta secca burro uova alcol  180 g farina di mandorle 120 g farina 00 100 g zucchero 1 uovo 30 g burro freddo 15 ml rum 1 limone (scorza grattugiata q.b.) 5 g estratto di vaniglia 12 g cannella in polvere">
 <img src="/img/fave-dei-morti-68d815d4.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Fave dei morti</span>
@@ -1047,7 +1047,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/filhos-de-abobora">
+<a class="card" href="/r/filhos-de-abobora" data-facets="alcol fritto" data-type="dolci" data-search="filhos de abobora (frittelle portoghesi di zucca) dolci frittelle dolce fritto zucca cannella natale portogallo alcol fritto  900 g zucca (abobora menina) gia cotta e ben scolata 480 g farina tipo 55 1 cucchiaio di lievito in polvere per dolci 100 g zucchero (facoltativo, o a piacere) 1 pizzico di sale 1 cucchiaio di acquavite (agua ardente) olio per friggere zucchero e cannella per rotolare i filhos">
 <img src="/img/filhos-de-abobora-7c4deb51.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Filhós de abóbora (frittelle portoghesi di zucca)</span>
@@ -1056,7 +1056,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/flan-di-uova-e-latte">
+<a class="card" href="/r/flan-di-uova-e-latte" data-facets="latte uova" data-type="dolci" data-search="flan di uova e latte (flan patissier senza crosta) dolci dolce al cucchiaio flan vaniglia francia uova latte  75 g farina 1 l latte 180 g zucchero semolato 6 uova 2 bustine di zucchero vanigliato">
 <img src="/img/flan-di-uova-e-latte-fa99ae67.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Flan di uova e latte (flan pâtissier senza crosta)</span>
@@ -1065,7 +1065,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/flapjack">
+<a class="card" href="/r/flapjack" data-facets="burro" data-type="dolci" data-search="flapjack (barrette di avena, burro e zucchero di canna) dolci barrette di avena avena zucchero di canna golden syrup regno unito burro  150 g burro 75 g zucchero di canna chiaro (light brown sugar) 3 cucchiai di golden syrup 250 g fiocchi d&#39;avena (porridge oats)">
 <img src="/img/flapjack-0976dda2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Flapjack (barrette di avena, burro e zucchero di canna)</span>
@@ -1074,7 +1074,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/fondant-al-cioccolato">
+<a class="card" href="/r/fondant-al-cioccolato" data-facets="burro cacao uova" data-type="dolci" data-search="fondant al cioccolato (tortino morbido) dolci torta cioccolato fondente francia cacao burro uova  200 g cioccolato fondente 100 g burro 125 g zucchero 50 g farina 3 uova">
 <img src="/img/fondant-al-cioccolato-303fcc20.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Fondant al cioccolato (tortino morbido)</span>
@@ -1083,7 +1083,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/fritole-veneziane-frittelle-con-uvetta-e-pinoli">
+<a class="card" href="/r/fritole-veneziane-frittelle-con-uvetta-e-pinoli" data-facets="alcol fritto frutta-secca latte uova" data-type="dolci" data-search="fritole veneziane (frittelle con uvetta e pinoli) dolci fritole frittelle dolce fritto carnevale venezia veneto uvetta pinoli uova latte alcol frutta secca fritto  300 g farina 00 80 g zucchero semolato 3,5 g lievito di birra disidratato 230 g latte intero 30 g grappa 2 uova medie scorza grattugiata di 1 arancia 50 g pinoli 80 g uva sultanina (uvetta) 1 pizzico di sale 1,5 l olio di arachidi per friggere zucchero a velo q.b. per cospargere">
 <img src="/img/fritole-veneziane-frittelle-con-uvetta-e-pinoli-1d59e644.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Fritole veneziane (frittelle con uvetta e pinoli)</span>
@@ -1092,7 +1092,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/frittelle-di-farina-di-castagne-con-uvetta-e-pinoli">
+<a class="card" href="/r/frittelle-di-farina-di-castagne-con-uvetta-e-pinoli" data-facets="alcol fritto frutta-secca latte uova" data-type="dolci" data-search="frittelle di farina di castagne con uvetta e pinoli dolci frittelle dolce fritto farina di castagne castagne uvetta pinoli frutta secca latte uova alcol fritto  200 g farina di castagne 200 g latte intero (o acqua) 1 uovo medio 30 g pinoli (o noci) 80 g uvetta 8 g lievito 1 cucchiaio di rum aromatico (facoltativo) 1 pizzico di sale fino per friggere 1 l olio di semi di arachide (q.b.) per rivestire zucchero semolato q.b.">
 <img src="/img/frittelle-di-farina-di-castagne-con-uvetta-e-pinoli-7ff09fff.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Frittelle di farina di castagne con uvetta e pinoli</span>
@@ -1101,7 +1101,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/frittelle-di-mele-a-pezzetti">
+<a class="card" href="/r/frittelle-di-mele-a-pezzetti" data-facets="fritto latte mele uova" data-type="dolci" data-search="frittelle di mele a pezzetti dolci frittelle dolce fritto mele cannella limone senza lievitazione uova latte fritto  2 mele 150 g farina 00 60 g zucchero semolato 60 ml latte 30 g olio di semi 1 uovo scorza grattugiata di 1 limone succo di 1 limone 1 cucchiaino di cannella 1/2 bustina di lievito per dolci olio di semi per friggere zucchero semolato per ricoprire">
 <img src="/img/frittelle-di-mele-a-pezzetti-4c1df906.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Frittelle di mele a pezzetti</span>
@@ -1110,7 +1110,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/frittelle-di-riso-di-san-giuseppe">
+<a class="card" href="/r/frittelle-di-riso-di-san-giuseppe" data-facets="fritto latte uova" data-type="dolci" data-search="frittelle di riso di san giuseppe dolci frittelle dolce fritto riso san giuseppe toscana limone latte uova fritto  1 l latte intero 150 g riso riso gallo gran gusto 3 cucchiai zucchero 3 uova scorza di 1 limone 3 o 4 cucchiai rasi di farina 00 1/2 cucchiaino di lievito per dolci 500 ml olio di arachidi per friggere">
 <img src="/img/frittelle-di-riso-di-san-giuseppe-37e67bd7.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Frittelle di riso di San Giuseppe</span>
@@ -1119,7 +1119,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/frittelle-dolci-di-ricotta">
+<a class="card" href="/r/frittelle-dolci-di-ricotta" data-facets="fritto ricotta uova" data-type="dolci" data-search="frittelle dolci di ricotta dolci frittelle dolce fritto ricotta arancia uova fritto  200 g ricotta 50 g zucchero 1 uovo grande 100 g farina 00 mezza bustina di lievito per dolci scorza grattugiata di 1 arancia (o limone) olio di semi di arachide per friggere zucchero per ricoprire">
 <img src="/img/frittelle-dolci-di-ricotta-de2d3c36.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Frittelle dolci di ricotta</span>
@@ -1128,7 +1128,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gelato-allo-yogurt-senza-gelatiera">
+<a class="card" href="/r/gelato-allo-yogurt-senza-gelatiera" data-facets="latte" data-type="dolci" data-search="gelato allo yogurt senza gelatiera dolci gelato senza cottura yogurt greco panna latte condensato amarene latte  500 g panna fresca liquida 400 g latte condensato 450 g yogurt greco per decorare 60 g amarene sciroppate">
 <img src="/img/gelato-allo-yogurt-senza-gelatiera-9e5b687c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gelato allo yogurt senza gelatiera</span>
@@ -1137,7 +1137,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gelo-di-arance">
+<a class="card" href="/r/gelo-di-arance" data-facets="cacao" data-type="dolci" data-search="gelo di arance dolci gelo dolce al cucchiaio arance cacao per il gelo di arance 600 g succo d&#39;arancia 80 g zucchero 60 g amido di mais per decorare cioccolato fondente a scaglie q.b.">
 <img src="/img/gelo-di-arance-ec018ce5.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gelo di arance</span>
@@ -1146,7 +1146,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gelo-di-mandarino">
+<a class="card" href="/r/gelo-di-mandarino" data-facets="frutta-secca" data-type="dolci" data-search="gelo di mandarino dolci dolce al cucchiaio mandarini sicilia frutta secca  750 g mandarini 90 g zucchero semolato 50 g amido di mais per la finitura granella di pistacchi q.b.">
 <img src="/img/gelo-di-mandarino-7bad91ce.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gelo di mandarino</span>
@@ -1155,7 +1155,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gulab-jamun">
+<a class="card" href="/r/gulab-jamun" data-facets="burro fritto frutta-secca latte" data-type="dolci" data-search="gulab jamun (palline indiane fritte e immerse nello sciroppo) dolci gulab jamun dolce fritto palline latte in polvere sciroppo di zucchero india latte burro frutta secca fritto per le palline 1 tazza (240 ml) di latte in polvere 5 cucchiai farina 00 (maida) 1 cucchiaino di ghee (burro chiarificato) o olio 1 cucchiaio di ghee o olio, per ungere 2-4 cucchiai di latte (di piu se serve) 1 cucchiaio di yogurt (curd) oppure 34 di cucchiaio di succo di limone 1 pizzico grande di bicarbonato (oppure 1/8 di cucchiaino) ghee o olio per friggere 1 cucchiaino di pistacchi tritati per lo sciroppo 250-300 g zucchero (1 14-1 12 tazze) 360 ml acqua (1 12 tazze) 4 baccelli di cardamomo verde (oppure 14 di cucchiaino di cardamomo in polvere) 1 cucchiaino di acqua di rose">
 <img src="/img/gulab-jamun-1136255c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gulab jamun (palline indiane fritte e immerse nello sciroppo)</span>
@@ -1164,7 +1164,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gateau-magique">
+<a class="card" href="/r/gateau-magique" data-facets="burro latte uova" data-type="dolci" data-search="gateau magique (torta magica alla vaniglia con strato di crema) dolci torta vaniglia francia uova burro latte  500 ml latte 5 uova 140 g zucchero semolato 120 g burro fuso 110 g farina 2 baccelli di vaniglia">
 <img src="/img/gateau-magique-8ff2c51d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gâteau magique (torta magica alla vaniglia con strato di crema)</span>
@@ -1173,7 +1173,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/gateau-nantais">
+<a class="card" href="/r/gateau-nantais" data-facets="alcol burro frutta-secca uova" data-type="dolci" data-search="gateau nantais (torta di mandorle e rum con glassa) dolci torta farina di mandorle rum glassa francia frutta secca alcol uova burro  9 cl rum (3 cl nell&#39;impasto e 6 cl nella glassa) 100 g zucchero a velo (per la glassa) 3 uova 40 g farina 150 g zucchero 125 g farina di mandorle 125 g burro fuso">
 <img src="/img/gateau-nantais-a05ee96d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Gâteau nantais (torta di mandorle e rum con glassa)</span>
@@ -1182,7 +1182,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/kirschenmichel">
+<a class="card" href="/r/kirschenmichel" data-facets="alcol burro frutta-secca latte pane uova" data-type="dolci" data-search="kirschenmichel (budino di pane e ciliegie) dolci budino di pane ciliegie panini raffermi nocciole austria pane uova latte burro frutta secca alcol  4 panini raffermi (semmeln) 250 ml latte 40 ml kirschwasser (acquavite di ciliegie) 3 uova 60 g zucchero 100 g burro morbido scorza grattugiata di 1 limone 1 pizzico di cannella 1 pizzico di chiodi di garofano in polvere 125 g panna acida (sauerrahm) 300 g ciliegie 50 g nocciole tritate burro e pangrattato per lo stampo">
 <img src="/img/kirschenmichel-0dfbc280.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Kirschenmichel (budino di pane e ciliegie)</span>
@@ -1191,7 +1191,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/lemon-drizzle-cake">
+<a class="card" href="/r/lemon-drizzle-cake" data-facets="burro uova" data-type="dolci" data-search="lemon drizzle cake (plumcake al limone con glassa croccante di succo e zucchero) dolci plumcake limone regno unito uova burro torta 225 g burro non salato, morbido 225 g zucchero semolato fine (caster sugar) 4 uova 225 g farina self-raising (con lievito incorporato) 1 limone, scorza grattugiata glassa 1 limone e mezzo, il succo 85 g zucchero semolato fine (caster sugar)">
 <img src="/img/lemon-drizzle-cake-493158c1.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Lemon drizzle cake (plumcake al limone con glassa croccante di succo e zucchero)</span>
@@ -1200,7 +1200,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/lemon-posset">
+<a class="card" href="/r/lemon-posset" data-facets="latte" data-type="dolci" data-search="lemon posset (crema di panna e limone) dolci dolce al cucchiaio panna limone regno unito latte  600 ml panna fresca molto grassa (double cream) 175 g zucchero di canna dorato fine (golden caster sugar) 3 limoni, scorza grattugiata e succo (circa 75 ml di succo)">
 <img src="/img/lemon-posset-f0997906.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Lemon posset (crema di panna e limone)</span>
@@ -1209,7 +1209,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/loukoumades">
+<a class="card" href="/r/loukoumades" data-facets="cacao fritto frutta-secca" data-type="dolci" data-search="loukoumades (frittelle greche al miele) dolci frittelle dolce fritto lievito miele grecia frutta secca cacao fritto  500 g farina 1/2 bustina di lievito di birra secco 1 cucchiaino di zucchero 1/2 cucchiaino di sale circa 550 ml di acqua tiepida olio per friggere (la pentola riempita fino a meta circa) miele, in abbondanza, per servire cannella, per servire noci, per servire oppure, al posto di miele, cannella e noci: cioccolato di copertura fuso">
 <img src="/img/loukoumades-4e50b154.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Loukoumades (frittelle greche al miele)</span>
@@ -1218,7 +1218,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mandazi">
+<a class="card" href="/r/mandazi" data-facets="fritto" data-type="dolci" data-search="mandazi (frittelle africane al cocco e cardamomo) dolci frittelle dolce fritto latte di cocco cardamomo africa orientale kenya tanzania fritto  275 g farina self-raising (con lievito incorporato) 3 cucchiai di zucchero semolato 165 ml latte di cocco (full-fat, non light), a temperatura ambiente 1 cucchiaino di cardamomo in polvere 1/4 di cucchiaino di sale olio per friggere farina in piu, per stendere zucchero a velo per spolverare (facoltativo)">
 <img src="/img/mandazi-88538b21.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mandazi (frittelle africane al cocco e cardamomo)</span>
@@ -1227,7 +1227,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mekitsi">
+<a class="card" href="/r/mekitsi" data-facets="fritto uova" data-type="dolci" data-search="mekitsi (frittelle bulgare allo yogurt) dolci mekitsi frittelle dolce fritto yogurt bulgaria uova fritto  350 g farina 200 g yogurt 1 cucchiaino di aceto di mele 1 cucchiaino di bicarbonato 1 cucchiaino di sale 1 cucchiaio di zucchero semolato 1 uovo 2 cucchiai di olio di semi (per l&#39;impasto) olio di semi per friggere zucchero a velo per spolverare">
 <img src="/img/mekitsi-8fd84325.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mekitsi (frittelle bulgare allo yogurt)</span>
@@ -1236,7 +1236,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mele-al-forno-crema-mandorle">
+<a class="card" href="/r/mele-al-forno-crema-mandorle" data-facets="alcol frutta-secca latte mele uova" data-type="dolci" data-search="mele al forno con crema di mandorle (macas assadas com creme de amendoa) dolci mele mele al forno crema di mandorle portogallo alcol frutta secca latte uova mele 6 mele renette 12 cucchiai di zucchero di canna integrale mascobado (circa 160 g) 6 stecche di cannella 100 ml vino porto crema di mandorle 5 tuorli 120 g zucchero 40 g amido di mais (maizena) 500 ml latte 80 g mandorle macinate essenza di vaniglia q.b.">
 <img src="/img/mele-al-forno-crema-mandorle-595a9c7a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mele al forno con crema di mandorle (Maçãs assadas com creme de amêndoa)</span>
@@ -1245,7 +1245,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/migliaccio-napoletano">
+<a class="card" href="/r/migliaccio-napoletano" data-facets="burro latte ricotta uova" data-type="dolci" data-search="migliaccio napoletano dolci torta semolino ricotta uova burro latte  200 g semolino 500 ml latte 500 ml acqua 350 g ricotta di mucca 4 uova 1 bacca di vaniglia (semi e bacca) 250 g zucchero 40 g burro scorza di 1 limone zucchero a velo, per cospargere">
 <img src="/img/migliaccio-napoletano-66c77b5b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Migliaccio napoletano</span>
@@ -1254,7 +1254,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mousse-al-cioccolato-con-panna">
+<a class="card" href="/r/mousse-al-cioccolato-con-panna" data-facets="cacao latte" data-type="dolci" data-search="mousse al cioccolato con panna (senza uova) dolci dolce al cucchiaio mousse cioccolato fondente panna francia cacao latte  1 cucchiaino di zucchero a velo 25 cl panna liquida intera (30% di materia grassa) 100 g cioccolato fondente al 70%">
 <img src="/img/mousse-al-cioccolato-con-panna-00051e25.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mousse al cioccolato con panna (senza uova)</span>
@@ -1263,7 +1263,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mousse-al-cioccolato-fondente-veloce">
+<a class="card" href="/r/mousse-al-cioccolato-fondente-veloce" data-facets="cacao latte" data-type="dolci" data-search="mousse al cioccolato fondente veloce dolci mousse dolce al cucchiaio cioccolato fondente panna cacao latte  200 g cioccolato fondente al 50% 500 g panna fresca liquida">
 <img src="/img/mousse-al-cioccolato-fondente-veloce-ac2fb5dc.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mousse al cioccolato fondente veloce</span>
@@ -1272,7 +1272,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/mousse-al-cioccolato-senza-uova">
+<a class="card" href="/r/mousse-al-cioccolato-senza-uova" data-facets="cacao latte" data-type="dolci" data-search="mousse al cioccolato senza uova dolci mousse cioccolato fondente panna svizzera cacao latte  2,5 dl panna fresca intera (vollrahm) 100 g cioccolato fondente, spezzettato grossolanamente riccioli di cioccolato o menta per guarnire, a piacere">
 <img src="/img/mousse-al-cioccolato-senza-uova-471e2a79.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Mousse al cioccolato senza uova</span>
@@ -1281,7 +1281,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/oliebollen-frittelle-olandesi-con-uvetta-e-mela">
+<a class="card" href="/r/oliebollen-frittelle-olandesi-con-uvetta-e-mela" data-facets="burro fritto latte mele uova" data-type="dolci" data-search="oliebollen (frittelle olandesi con uvetta e mela) dolci oliebollen frittelle dolce fritto uvetta paesi bassi capodanno mele uova latte burro fritto  330 g farina 325 ml latte tiepido 50 g uvetta chiara 50 g uvetta scura 25 g burro a temperatura ambiente 1 cucchiaio e mezzo di succo di limone 1/2 mela 1 uovo 20 g zucchero semolato 7 g lievito di birra 5 g sale olio di girasole o altro olio vegetale neutro, per friggere zucchero a velo, per servire">
 <img src="/img/oliebollen-frittelle-olandesi-con-uvetta-e-mela-a5bcd2cd.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Oliebollen (frittelle olandesi con uvetta e mela)</span>
@@ -1290,7 +1290,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pain-d-epices-al-miele">
+<a class="card" href="/r/pain-d-epices-al-miele" data-facets="latte uova" data-type="dolci" data-search="pain d&#39;epices al miele (pan di miele speziato) dolci torta miele spezie francia uova latte  350 g miele millefiori 260 g farina 100 g latte intero 40 g zucchero di canna 2 uova 10 g lievito per dolci 1 cucchiaio di cannella 1 cucchiaino di zenzero in polvere 1 cucchiaino di anice stellato (badiana)">
 <img src="/img/pain-d-epices-al-miele-43210a61.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pain d&#39;épices al miele (pan di miele speziato)</span>
@@ -1299,7 +1299,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pane-fritto-dolce-marmellata">
+<a class="card" href="/r/pane-fritto-dolce-marmellata" data-facets="fritto latte marmellata pane uova" data-type="dolci" data-search="pane fritto dolce ripieno di marmellata dolci pane raffermo riciclo marmellata fritto latte pane uova  150 g pane raffermo, in 8 fette sottili (circa 1 cm) 80-100 g marmellata densa 300-400 ml latte 3 cucchiai zucchero semolato buccia grattugiata di 1 limone 2 uova olio di semi di girasole per friggere 50 g zucchero semolato per la finitura">
 <img src="/img/pane-fritto-dolce-marmellata-08e78fff.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pane fritto dolce ripieno di marmellata</span>
@@ -1308,7 +1308,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/panna-cotta">
+<a class="card" href="/r/panna-cotta" data-facets="carne latte" data-type="dolci" data-search="panna cotta dolci dolce al cucchiaio panna vaniglia gelatina latte carne  500 g panna fresca liquida 1 baccello di vaniglia 80 g zucchero 8 g gelatina in fogli">
 <img src="/img/panna-cotta-f86502ad.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Panna cotta</span>
@@ -1317,7 +1317,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/papanasi">
+<a class="card" href="/r/papanasi" data-facets="fritto latte marmellata uova" data-type="dolci" data-search="papanasi (frittelle rumene di formaggio fresco) dolci frittelle dolce fritto formaggio fresco romania uova latte marmellata fritto impasto 275 g branza de vaci grassa (formaggio fresco romeno di latte vaccino), ben scolata 2 uova 10 g zucchero vanigliato bourbon 1 pizzico di sale 1 cucchiaino di scorza di limone grattugiata 220 g farina (+ 1 cucchiaio, se serve) 1 cucchiaino di lievito in polvere per dolci per friggere circa 500 ml olio per servire panna acida (smantana fermentata) zucchero vanigliato per addolcire la panna acida (facoltativo) marmellata di mirtilli, amarene, fragole, ciliegie, ecc.">
 <img src="/img/papanasi-1811fc82.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Papanași (frittelle rumene di formaggio fresco)</span>
@@ -1326,7 +1326,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pere-al-vino-rosso">
+<a class="card" href="/r/pere-al-vino-rosso" data-facets="alcol" data-type="dolci" data-search="pere al vino rosso dolci frutta cotta pere vino rosso alcol  4 pere coscia 300 g vino rosso (pinot nero, merlot, barbera) 200 g acqua 200 g zucchero 3 chiodi di garofano 2 anici stellati 1 stecca di cannella 2 bacche di cardamomo">
 <img src="/img/pere-al-vino-rosso-9e62a17d.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pere al vino rosso</span>
@@ -1335,7 +1335,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pere-cotte">
+<a class="card" href="/r/pere-cotte" data-facets="" data-type="dolci" data-search="pere cotte dolci frutta cotta in sciroppo pere anice stellato cannella  2 pere williams (380 g) 5 anici stellati 2 stecche di cannella 500 g acqua 300 g zucchero">
 <img src="/img/pere-cotte-928814ba.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pere cotte</span>
@@ -1344,7 +1344,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pere-cotte-nel-vino-bianco-con-vaniglia-e-lime">
+<a class="card" href="/r/pere-cotte-nel-vino-bianco-con-vaniglia-e-lime" data-facets="alcol" data-type="dolci" data-search="pere cotte nel vino bianco con vaniglia e lime dolci frutta cotta pere vino bianco vaniglia lime francia alcol  1 lime 2 baccelli di vaniglia 75 cl vino bianco 150 g zucchero 6 pere comice">
 <img src="/img/pere-cotte-nel-vino-bianco-con-vaniglia-e-lime-f1996f29.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pere cotte nel vino bianco con vaniglia e lime</span>
@@ -1353,7 +1353,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pesche-ripiene-al-forno">
+<a class="card" href="/r/pesche-ripiene-al-forno" data-facets="cacao frutta-secca" data-type="dolci" data-search="pesche ripiene al forno dolci frutta cotta al forno pesche amaretti cioccolato fondente cacao frutta secca  800 g pesche gialle medie, mature e sode (8 pesche) 100 g cioccolato fondente 80 g amaretti">
 <img src="/img/pesche-ripiene-al-forno-5807cc38.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pesche ripiene al forno</span>
@@ -1362,7 +1362,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pestinos">
+<a class="card" href="/r/pestinos" data-facets="alcol fritto" data-type="dolci" data-search="pestinos (dolci fritti andalusi) dolci pestinos dolce fritto olio d&#39;oliva vino bianco cannella spagna andalusia pasqua alcol fritto  250 ml olio extravergine d&#39;oliva (1 bicchiere) 250 ml vino bianco (1 bicchiere) 1 stecca di cannella 1 scorza di limone 1 cucchiaino di sale 750 g farina olio extravergine d&#39;oliva per friggere zucchero per rivestire i pestinos">
 <img src="/img/pestinos-6a5bc424.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pestiños (dolci fritti andalusi)</span>
@@ -1371,7 +1371,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/pisang-goreng-banane-fritte-indonesiane">
+<a class="card" href="/r/pisang-goreng-banane-fritte-indonesiane" data-facets="fritto" data-type="dolci" data-search="pisang goreng (banane fritte indonesiane) dolci frittelle dolce fritto banane farina di riso indonesia fritto  6 banane kepok o tanduk (banane da cottura sode, simili ai platani) 150 g farina di frumento 50 g farina di riso 1 cucchiaio di zucchero semolato 1/2 cucchiaino di sale 1/2 cucchiaino di vaniglia in polvere 1/2 cucchiaino di lievito per dolci 200 ml acqua ghiacciata 250 ml olio per friggere">
 <img src="/img/pisang-goreng-banane-fritte-indonesiane-70e1202e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Pisang goreng (banane fritte indonesiane)</span>
@@ -1380,7 +1380,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/plumcake-latte-e-miele">
+<a class="card" href="/r/plumcake-latte-e-miele" data-facets="latte uova" data-type="dolci" data-search="plumcake latte e miele dolci plumcake miele olio di semi latte uova  2 uova 80 g zucchero 100 g latte 60 g olio di semi 80 g miele 200 g farina 00 1 bustina di lievito per dolci">
 <img src="/img/plumcake-latte-e-miele-b6de5a75.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Plumcake latte e miele</span>
@@ -1389,7 +1389,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/plumcake-morbido-alle-mandorle-e-fior-d-arancio">
+<a class="card" href="/r/plumcake-morbido-alle-mandorle-e-fior-d-arancio" data-facets="burro frutta-secca uova" data-type="dolci" data-search="plumcake morbido alle mandorle e fior d&#39;arancio dolci torta plumcake mandorle fiori d&#39;arancio francia uova burro frutta secca  5 uova 150 g zucchero di canna 200 g burro fuso 200 g farina 1 bustina di lievito per dolci 100 g farina di mandorle 2 cucchiaini di acqua di fiori d&#39;arancio zucchero a velo per decorare">
 <img src="/img/plumcake-morbido-alle-mandorle-e-fior-d-arancio-21cc714b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Plumcake morbido alle mandorle e fior d&#39;arancio</span>
@@ -1398,7 +1398,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/quarkballchen">
+<a class="card" href="/r/quarkballchen" data-facets="fritto uova" data-type="dolci" data-search="quarkballchen (palline fritte al quark) dolci palline fritte frittelle dolce fritto quark germania carnevale uova fritto per le palline 250 g farina 00 (in germania tipo 405) 1/2 bustina di lievito per dolci 50 g zucchero 1 bustina di zucchero vanigliato 1 pizzico di sale 250 g quark (20 % di grassi) 2 uova (taglia m) altri ingredienti 1 litro di olio di semi di girasole (o di colza) per friggere 50 g zucchero per rotolare le palline">
 <img src="/img/quarkballchen-233a16e3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Quarkbällchen (palline fritte al quark)</span>
@@ -1407,7 +1407,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/queen-of-puddings-budino-di-mollica-di-pane-marmellata-e-meringa">
+<a class="card" href="/r/queen-of-puddings-budino-di-mollica-di-pane-marmellata-e-meringa" data-facets="burro latte marmellata pane uova" data-type="dolci" data-search="queen of puddings (budino di mollica di pane, marmellata e meringa) dolci budino dolce al forno meringa mollica di pane marmellata di lamponi regno unito pane marmellata uova latte burro  550 ml latte 25 g burro, piu altro per la teglia 1 limone, scorza grattugiata 100 g mollica di pane bianco fresca 240 g zucchero semolato 4 uova, tuorli e albumi separati 6-8 cucchiai di marmellata di lamponi">
 <img src="/img/queen-of-puddings-budino-di-mollica-di-pane-marmellata-e-meringa-36f161e7.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Queen of puddings (budino di mollica di pane, marmellata e meringa)</span>
@@ -1416,7 +1416,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/racuchy-z-jablkami-frittelle-polacche-di-mele-e-kefir">
+<a class="card" href="/r/racuchy-z-jablkami-frittelle-polacche-di-mele-e-kefir" data-facets="fritto marmellata mele uova" data-type="dolci" data-search="racuchy z jabkami (frittelle polacche di mele e kefir) dolci racuchy frittelle dolce fritto kefir polonia mele uova marmellata fritto  300 g farina di frumento 4 cucchiai di zucchero 1 cucchiaino di bicarbonato di sodio 400 ml kefir 2 uova grandi 3-4 mele acide per friggere e servire olio per friggere zucchero a velo marmellata">
 <img src="/img/racuchy-z-jablkami-frittelle-polacche-di-mele-e-kefir-238ac899.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Racuchy z jabłkami (frittelle polacche di mele e kefir)</span>
@@ -1425,7 +1425,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/riso-al-latte">
+<a class="card" href="/r/riso-al-latte" data-facets="latte" data-type="dolci" data-search="riso al latte (milchreis) dolci budino di riso riso austria latte riso al latte 1 l latte 1 pizzico di sale 1 cucchiaio di zucchero 1 bustina di zucchero vanigliato 250 g riso a chicco tondo (milchreis) per cospargere 1 cucchiaino di cannella in polvere 1 cucchiaino di zucchero">
 <img src="/img/riso-al-latte-b15c3661.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Riso al latte (Milchreis)</span>
@@ -1434,7 +1434,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/riso-al-latte-cremoso-alla-vaniglia">
+<a class="card" href="/r/riso-al-latte-cremoso-alla-vaniglia" data-facets="latte" data-type="dolci" data-search="riso al latte cremoso alla vaniglia dolci dolce al cucchiaio riso vaniglia francia latte  1 l latte intero 120 g riso a chicco tondo (speciale per dolci) 70 g zucchero semolato 1 baccello di vaniglia">
 <img src="/img/riso-al-latte-cremoso-alla-vaniglia-62474fe9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Riso al latte cremoso alla vaniglia</span>
@@ -1443,7 +1443,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/risolatte">
+<a class="card" href="/r/risolatte" data-facets="cacao latte" data-type="dolci" data-search="risolatte (riso al latte dolce) dolci dolce al cucchiaio riso al latte riso latte cacao  300 g riso carnaroli 1 l latte intero 90 g zucchero 1 scorza di limone 12 baccello di vaniglia 1 pizzico di sale fino per spolverizzare cacao amaro in polvere q.b. cannella in polvere q.b.">
 <img src="/img/risolatte-bb2b7863.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Risolatte (riso al latte dolce)</span>
@@ -1452,7 +1452,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/rocher-al-cocco">
+<a class="card" href="/r/rocher-al-cocco" data-facets="uova" data-type="dolci" data-search="rocher al cocco (dolcetti di cocco e albumi) dolci biscotti cocco albumi francia uova  150 g cocco rape 150 g zucchero semolato 3 albumi">
 <img src="/img/rocher-al-cocco-d15e4f84.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Rocher al cocco (dolcetti di cocco e albumi)</span>
@@ -1461,7 +1461,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/rock-cakes">
+<a class="card" href="/r/rock-cakes" data-facets="burro latte uova" data-type="dolci" data-search="rock cakes (dolcetti rustici con frutta essiccata e spezie) dolci dolcetti frutta essiccata spezie regno unito uova burro latte  200 g farina self-raising (con lievito incorporato) 1 cucchiaino di lievito per dolci 1 cucchiaino e mezzo di spezie miste (mixed spice) 100 g burro 85 g zucchero muscovado chiaro (light muscovado sugar) 100 g frutta essiccata mista (mixed dried fruit) 1 uovo, sbattuto 2 cucchiai (30 ml) di latte zucchero demerara (oppure zollette di zucchero schiacciate grossolanamente), per cospargere">
 <img src="/img/rock-cakes-1a6f70fd.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Rock cakes (dolcetti rustici con frutta essiccata e spezie)</span>
@@ -1470,7 +1470,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/rote-grutze">
+<a class="card" href="/r/rote-grutze" data-facets="" data-type="dolci" data-search="rote grutze (composta di frutti rossi addensata) dolci composta al cucchiaio frutti di bosco ciliegie germania  500 g frutti di bosco misti (ad esempio fragole, ribes rosso e nero, lamponi, more e mirtilli) 300 g amarene (ciliegie acide) 3 cucchiai amido di mais 250 ml nettare di ribes rosso o di ciliegia 1 limone biologico 75 g zucchero 1 bustina di zucchero vanigliato">
 <img src="/img/rote-grutze-2bc3d2c9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Rote Grütze (composta di frutti rossi addensata)</span>
@@ -1479,7 +1479,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/rotolo-pan-di-spagna-marmellata-prugne">
+<a class="card" href="/r/rotolo-pan-di-spagna-marmellata-prugne" data-facets="latte marmellata uova" data-type="dolci" data-search="rotolo di pan di spagna con marmellata di prugne dolci marmellata di susine rotolo pan di spagna latte marmellata uova  4 uova 100 g farina 00 110 g zucchero 10 g miele di acacia marmellata di prugne q.b. panna da montare q.b. zucchero a velo">
 <img src="/img/rotolo-pan-di-spagna-marmellata-prugne-b46c64f3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Rotolo di pan di spagna con marmellata di prugne</span>
@@ -1488,7 +1488,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/salame-di-cioccolato-al-caffe">
+<a class="card" href="/r/salame-di-cioccolato-al-caffe" data-facets="burro cacao" data-type="dolci" data-search="salame di cioccolato al caffe dolci senza cottura salame di cioccolato cioccolato fondente biscotti secchi caffe cacao burro  250 g biscotti secchi 150 g cioccolato fondente 100 g burro fuso 100 ml caffe ristretto 50 g zucchero 30 g cacao amaro zucchero a velo q.b.">
 <img src="/img/salame-di-cioccolato-al-caffe-d359c631.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Salame di cioccolato al caffè</span>
@@ -1497,7 +1497,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/sbrisolona">
+<a class="card" href="/r/sbrisolona" data-facets="burro frutta-secca uova" data-type="dolci" data-search="sbrisolona (torta sbriciolata mantovana) dolci torta torta sbriciolata mandorle farina di mais burro frutta secca uova  100 g mandorle 100 g farina 00 100 g farina di mais fioretto 100 g zucchero 100 g burro 1 tuorlo 1 bustina di vanillina 1 limone (scorza grattugiata) mandorle intere q.b. (per decorare) zucchero semolato q.b. (per decorare)">
 <img src="/img/sbrisolona-dce285d3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Sbrisolona (torta sbriciolata mantovana)</span>
@@ -1506,7 +1506,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/schiacciata-alla-fiorentina">
+<a class="card" href="/r/schiacciata-alla-fiorentina" data-facets="cacao latte uova" data-type="dolci" data-search="schiacciata alla fiorentina dolci torta arancia olio di semi cacao uova latte  225 g zucchero 3 uova 300 g farina 00 90 g latte 50 g olio di semi 1 bustina di lievito per dolci 1 arancia (succo e buccia) 1 bacca di vaniglia zucchero a velo, per decorare cacao amaro, per decorare">
 <img src="/img/schiacciata-alla-fiorentina-a942ec86.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Schiacciata alla fiorentina</span>
@@ -1515,7 +1515,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/semifreddo-agli-amaretti">
+<a class="card" href="/r/semifreddo-agli-amaretti" data-facets="alcol frutta-secca latte" data-type="dolci" data-search="semifreddo agli amaretti dolci semifreddo senza cottura mascarpone panna amaretti rum latte frutta secca alcol per il dolce 300 ml panna fresca 250 g mascarpone 100 g zucchero a velo 100 g amaretti 1 bicchierino di rum per la decorazione amaretti q.b.">
 <img src="/img/semifreddo-agli-amaretti-9de56c68.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Semifreddo agli amaretti</span>
@@ -1524,7 +1524,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/sformato-di-quark-con-ciliegie">
+<a class="card" href="/r/sformato-di-quark-con-ciliegie" data-facets="uova" data-type="dolci" data-search="sformato di quark con ciliegie (quarkauflauf) dolci dolce al forno sformato quark ciliegie germania uova  1 barattolo (720 ml) di ciliegie 4 uova (taglia m) 2 bustine di zucchero vanigliato 150 g zucchero 2 bustine (da 37 g l&#39;una) di preparato in polvere per budino gusto vaniglia (puddingpulver) 750 g quark magro (magerquark)">
 <img src="/img/sformato-di-quark-con-ciliegie-f9c5ba0b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Sformato di quark con ciliegie (Quarkauflauf)</span>
@@ -1533,7 +1533,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/sformato-di-semolino-al-forno">
+<a class="card" href="/r/sformato-di-semolino-al-forno" data-facets="burro latte uova" data-type="dolci" data-search="sformato di semolino al forno (grieauflauf) dolci dolce al forno semolino limone austria burro latte uova  1 l latte 80 g burro 1 cucchiaino di sale 250 g semolino di grano tenero (weichweizengrie) 1 limone biologico (scorza) 3 uova (taglia m) 80 g zucchero 1 cucchiaio di burro (per lo stampo) 1 cucchiaio di zucchero a velo (per spolverare)">
 <img src="/img/sformato-di-semolino-al-forno-f0a8406a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Sformato di semolino al forno (Grießauflauf)</span>
@@ -1542,7 +1542,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/shortbread">
+<a class="card" href="/r/shortbread" data-facets="burro" data-type="dolci" data-search="shortbread (frollini scozzesi al burro) dolci biscotti frollini regno unito burro  250 g farina 00 150 g burro morbido (a temperatura ambiente) 60 g zucchero semolato fine (caster sugar), piu altro per cospargere">
 <img src="/img/shortbread-fbc1c235.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Shortbread (frollini scozzesi al burro)</span>
@@ -1551,7 +1551,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/sopaipillas">
+<a class="card" href="/r/sopaipillas" data-facets="burro fritto" data-type="dolci" data-search="sopaipillas (frittelle cilene di zucca) dolci sopaipillas frittelle dolce fritto zucca chancaca cile burro fritto sopaipillas 225 g purea di zucca fredda (1 tazza) 250 g farina (2 tazze) 2 cucchiaini di lievito per dolci 1 cucchiaino di sale fino 3 cucchiai di grasso vegetale (shortening), margarina o burro fuso olio per friggere salsa di chancaca (per le sopaipillas pasadas, versione dolce) 400 g chancaca (zucchero di canna non raffinato, in pani) 480 ml acqua (2 tazze) 1 pezzo di scorza d&#39;arancia 1 stecca di cannella 1 cucchiaino di maizena (facoltativo), per addensare">
 <img src="/img/sopaipillas-ad9ecaf0.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Sopaipillas (frittelle cilene di zucca)</span>
@@ -1560,7 +1560,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/strauben">
+<a class="card" href="/r/strauben" data-facets="alcol fritto latte marmellata uova" data-type="dolci" data-search="strauben (frittelle tirolesi a spirale) dolci frittelle dolce fritto strauben alto adige uova latte alcol marmellata fritto  220 g farina 250 ml latte 3 tuorli 1 goccio di grappa (schnaps) 3 albumi 1 pizzico di sale un po&#39; di zucchero vanigliato 50 g zucchero olio per friggere zucchero a velo marmellata di mirtilli rossi">
 <img src="/img/strauben-7fd2ad93.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Strauben (frittelle tirolesi a spirale)</span>
@@ -1569,7 +1569,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/strudel-mele">
+<a class="card" href="/r/strudel-mele" data-facets="alcol burro frutta-secca mele uova" data-type="dolci" data-search="strudel di mele dolci strudel mele trentino alcol burro frutta secca uova impasto 130 g farina 00 54 g uovo (circa 1 medio) 30 g acqua 9 g olio di semi (1 cucchiaio) 1 pizzico di sale ripieno 750 g mele golden (peso prima di pulirle) 60 g zucchero 60 g pangrattato 30 g burro 50 g uvetta 25 g pinoli tostati 1 cucchiaino di cannella in polvere 2 cucchiai di rum 1 limone (scorza) per finire burro q.b. (per spennellare) zucchero a velo q.b. (per spolverizzare)">
 <img src="/img/strudel-mele-5e89d9c8.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Strudel di mele</span>
@@ -1578,7 +1578,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/struffoli-napoletani">
+<a class="card" href="/r/struffoli-napoletani" data-facets="alcol burro fritto uova" data-type="dolci" data-search="struffoli napoletani dolci struffoli dolce fritto natale napoli campania miele burro uova alcol fritto  80 g burro 400 g farina 00 40 g zucchero 3 uova medie 1 cucchiaino di lievito per dolci 2 cucchiai liquore all&#39;anice 1 pizzico di sale scorza grattugiata di 1 arancia e di 1 limone olio di semi per friggere 300 g miele 2 cucchiai zucchero a velo vanigliato 3 cucchiai confettini">
 <img src="/img/struffoli-napoletani-8c31c889.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Struffoli napoletani</span>
@@ -1587,7 +1587,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/sugoli-d-uva">
+<a class="card" href="/r/sugoli-d-uva" data-facets="" data-type="dolci" data-search="sugoli d&#39;uva dolci budino dolce al cucchiaio uva  1 kg uva nera 120 g acqua 70 g farina 00 100 g zucchero 1 baccello di vaniglia">
 <img src="/img/sugoli-d-uva-115c90f0.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Sugoli d&#39;uva</span>
@@ -1596,7 +1596,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/summer-pudding">
+<a class="card" href="/r/summer-pudding" data-facets="pane" data-type="dolci" data-search="summer pudding (dolce di pane e frutti di bosco) dolci pane raffermo frutti di bosco dolce al cucchiaio regno unito pane  300 g fragole 250 g more 100 g ribes rosso 500 g lamponi oppure 1,25 kg di frutti di bosco e ribes misti a scelta, al posto dei quattro sopra 175 g zucchero di canna dorato fine (golden caster sugar) 7 fette di pane in cassetta bianco del giorno prima, a fette medie">
 <img src="/img/summer-pudding-76ef1535.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Summer pudding (dolce di pane e frutti di bosco)</span>
@@ -1605,7 +1605,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/szarlotka">
+<a class="card" href="/r/szarlotka" data-facets="burro mele uova" data-type="dolci" data-search="szarlotka (crostata di mele con frolla grattugiata) dolci crostata mele frolla polonia burro uova pasta 320 g farina 00 200 g burro freddo, appena tolto dal frigo 1 uovo medio, anche appena tolto dal frigo 80 g zucchero semolato 2 cucchiaini rasi di lievito per dolci (o meno) 1 pizzico di sale (facoltativo) ripieno 1,5 kg mele renette (circa 5-6 mele, peso prima di sbucciarle) 1 cucchiaino di cannella (facoltativa) per finire zucchero a velo, anche mescolato a cannella, per spolverare (facoltativo)">
 <img src="/img/szarlotka-dd42abe3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Szarlotka (crostata di mele con frolla grattugiata)</span>
@@ -1614,7 +1614,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/tarte-tatin">
+<a class="card" href="/r/tarte-tatin" data-facets="burro mele" data-type="dolci" data-search="tarte tatin (torta di mele rovesciata) dolci crostata mele torta rovesciata francia burro pasta 250 g farina 100 g burro freddo 80 g acqua fredda 1 pizzico di sale fino mele e caramello 8 mele golden 75 g burro 75 g zucchero semolato 1 baccello di vaniglia">
 <img src="/img/tarte-tatin-9d1ec09b.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Tarte Tatin (torta di mele rovesciata)</span>
@@ -1623,7 +1623,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/tiramisu-senza-uova">
+<a class="card" href="/r/tiramisu-senza-uova" data-facets="alcol cacao latte" data-type="dolci" data-search="tiramisu senza uova dolci dolce al cucchiaio senza cottura mascarpone savoiardi caffe alcol cacao latte  250 g mascarpone 200 ml panna fresca 80 g zucchero a velo 200 g savoiardi 250 ml caffe freddo 4 cucchiai di marsala cacao amaro q.b.">
 <img src="/img/tiramisu-senza-uova-3fd0d26f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Tiramisù senza uova</span>
@@ -1632,7 +1632,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-5-minuti">
+<a class="card" href="/r/torta-5-minuti" data-facets="latte uova" data-type="dolci" data-search="torta 5 minuti dolci torta arancia olio di semi latte uova  2 uova 200 g zucchero 60 ml olio di semi 200 g farina 00 100 ml latte 1 bustina di lievito per dolci 1 pizzico di sale 1 arancia (buccia grattugiata) 1 cucchiaino di essenza di vaniglia 150 ml acqua calda zucchero a velo (per spolverizzare)">
 <img src="/img/torta-5-minuti-b696962a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta 5 minuti</span>
@@ -1641,7 +1641,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-al-cioccolato">
+<a class="card" href="/r/torta-al-cioccolato" data-facets="burro cacao uova" data-type="dolci" data-search="torta al cioccolato dolci torta cioccolato fondente cacao burro uova  150 g cioccolato fondente al 55% 200 g burro a temperatura ambiente 150 g zucchero 150 g farina 00 30 g cacao amaro in polvere 4 uova a temperatura ambiente 8 g lievito in polvere per dolci 1 pizzico di sale fino cacao amaro in polvere q.b. per spolverizzare">
 <img src="/img/torta-al-cioccolato-72e385b2.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta al cioccolato</span>
@@ -1650,7 +1650,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-al-latte-caldo">
+<a class="card" href="/r/torta-al-latte-caldo" data-facets="burro latte uova" data-type="dolci" data-search="torta al latte caldo dolci torta vaniglia burro latte uova  3 uova 170 g zucchero 170 g farina 00 8 g lievito per dolci 1 pizzico di sale 120 ml latte 60 g burro 1 stecca di vaniglia zucchero a velo per spolverare">
 <img src="/img/torta-al-latte-caldo-ba966a69.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta al latte caldo</span>
@@ -1659,7 +1659,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-al-mascarpone-con-gocce-di-cioccolato">
+<a class="card" href="/r/torta-al-mascarpone-con-gocce-di-cioccolato" data-facets="cacao uova" data-type="dolci" data-search="torta al mascarpone con gocce di cioccolato dolci torta mascarpone gocce di cioccolato cacao uova  3 uova 150 g zucchero 250 g mascarpone 180 g farina 00 8 g lievito per dolci 100 g gocce di cioccolato zucchero a velo q.b.">
 <img src="/img/torta-al-mascarpone-con-gocce-di-cioccolato-1a885d70.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta al mascarpone con gocce di cioccolato</span>
@@ -1668,7 +1668,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-all-acqua">
+<a class="card" href="/r/torta-all-acqua" data-facets="" data-type="dolci" data-search="torta all&#39;acqua dolci torta acqua olio di semi vaniglia  330 g acqua naturale a temperatura ambiente 300 g farina 00 200 g zucchero 16 g lievito in polvere per dolci 90 g olio di semi 1 baccello di vaniglia zucchero a velo per guarnire">
 <img src="/img/torta-all-acqua-5b30b9c9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta all&#39;acqua</span>
@@ -1677,7 +1677,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-all-arancia">
+<a class="card" href="/r/torta-all-arancia" data-facets="uova" data-type="dolci" data-search="torta all&#39;arancia dolci torta arancia olio di semi uova  250 g farina 00 165 g uova (circa 3 medie a temperatura ambiente) 150 g zucchero semolato 150 g succo d&#39;arancia 2 arance (scorza grattugiata) 100 g olio di semi di girasole 8 g lievito in polvere per dolci 1 pizzico di sale fino zucchero a velo q.b.">
 <img src="/img/torta-all-arancia-40cb30ac.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta all&#39;arancia</span>
@@ -1686,7 +1686,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-alla-crema-di-marroni">
+<a class="card" href="/r/torta-alla-crema-di-marroni" data-facets="alcol burro frutta-secca uova" data-type="dolci" data-search="torta alla crema di marroni (gateau ardechois) dolci torta crema di marroni francia uova burro frutta secca alcol  200 g crema di marroni 150 g farina 100 g burro 100 g zucchero 3 uova 1 bustina di lievito per dolci 3 cucchiai colmi di rum scuro 1 pizzico di sale fino">
 <img src="/img/torta-alla-crema-di-marroni-4d2aea2f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta alla crema di marroni (gâteau ardéchois)</span>
@@ -1695,7 +1695,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-alla-panna">
+<a class="card" href="/r/torta-alla-panna" data-facets="latte uova" data-type="dolci" data-search="torta alla panna dolci torta panna limone latte uova  200 g panna fresca liquida 3 uova 200 g farina 00 120 g zucchero 1 limone (scorza grattugiata) 16 g lievito in polvere per dolci 1 pizzico di sale zucchero a velo q.b.">
 <img src="/img/torta-alla-panna-f1cdb7de.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta alla panna</span>
@@ -1704,7 +1704,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-allo-yogurt">
+<a class="card" href="/r/torta-allo-yogurt" data-facets="uova" data-type="dolci" data-search="torta allo yogurt dolci torta yogurt greco olio di semi limone uova  4 uova 180 g zucchero 100 ml olio di semi 250 g yogurt greco 150 g farina 00 100 g fecola di patate 1 bustina di lievito per dolci 1 buccia di limone 1 cucchiaino di essenza di vaniglia zucchero a velo vanigliato per spolverare">
 <img src="/img/torta-allo-yogurt-f85843c0.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta allo yogurt</span>
@@ -1713,7 +1713,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-basca-crema-pasticcera">
+<a class="card" href="/r/torta-basca-crema-pasticcera" data-facets="burro frutta-secca latte uova" data-type="dolci" data-search="torta basca con crema pasticcera (pastel vasco) dolci crostata torta crema pasticcera mandorle spagna burro frutta secca latte uova crema pasticcera 50 g zucchero 50 g maizena (amido di mais) 2 uova medie 1 stecca di cannella 50 g burro 400 ml latte intero pasta frolla 300 g farina 00 60 g farina di mandorle 200 g burro molto freddo 150 g zucchero 2 uova medie 1 pizzico di sale per spennellare 1 uovo">
 <img src="/img/torta-basca-crema-pasticcera-82c17352.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta basca con crema pasticcera (Pastel vasco)</span>
@@ -1722,7 +1722,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-caprese">
+<a class="card" href="/r/torta-caprese" data-facets="burro cacao frutta-secca uova" data-type="dolci" data-search="torta caprese dolci torta cioccolato fondente farina di mandorle cacao frutta secca burro uova  125 g burro a temperatura ambiente 140 g zucchero semolato 3 uova grandi 140 g cioccolato fondente al 70% 175 g farina di mandorle zucchero a velo q.b.">
 <img src="/img/torta-caprese-04a10298.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta caprese</span>
@@ -1731,7 +1731,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-della-nonna">
+<a class="card" href="/r/torta-della-nonna" data-facets="burro frutta-secca latte uova" data-type="dolci" data-search="torta della nonna dolci crostata torta crema pasticcera pinoli toscana burro frutta secca latte uova pasta frolla (stampo da 24 cm) 500 g farina 00 250 g burro morbido 150 g zucchero a velo 2 uova medie (110 g) 1/2 limone non trattato (scorza) 1 pizzico di sale fino 4 g lievito in polvere per dolci crema pasticcera 500 g latte intero 100 g zucchero circa 5 tuorli (85 g) 1/2 limone non trattato (scorza) 25 g amido di mais (maizena) 20 g amido di riso per guarnire 40 g pinoli zucchero a velo q.b.">
 <img src="/img/torta-della-nonna-b14b184f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta della nonna</span>
@@ -1740,7 +1740,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-banane">
+<a class="card" href="/r/torta-di-banane" data-facets="frutta-secca uova" data-type="dolci" data-search="torta di banane dolci torta banane noci olio di semi uova frutta secca  370 g banane da sbucciare 8 g lievito in polvere per dolci 125 g olio di semi 215 g farina 00 sale fino q.b. 200 g zucchero 2 uova medie 60 g noci da tritare 1 baccello di vaniglia">
 <img src="/img/torta-di-banane-6ebca4be.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di banane</span>
@@ -1749,7 +1749,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-carote">
+<a class="card" href="/r/torta-di-carote" data-facets="uova" data-type="dolci" data-search="torta di carote dolci torta carote arancia uova  200 g carote 4 uova 200 g zucchero 100 ml olio di semi di girasole 100 ml succo d&#39;arancia 300 g farina 00 16 g lievito per dolci zucchero a velo q.b.">
 <img src="/img/torta-di-carote-e11eca67.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di carote</span>
@@ -1758,7 +1758,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-fichi-noci-ricotta">
+<a class="card" href="/r/torta-fichi-noci-ricotta" data-facets="frutta-secca ricotta uova" data-type="dolci" data-search="torta di fichi e noci dolci fichi noci ricotta torta frutta secca uova  3 uova 200 g zucchero 250 g ricotta 200 g farina 00 1 bustina di lievito per dolci 10 fichi 40 g noci 2 cucchiai di miele">
 <img src="/img/torta-fichi-noci-ricotta-ba440ad3.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di fichi e noci</span>
@@ -1767,7 +1767,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-grano-saraceno-dell-alto-adige-con-marmellata-di-mirtilli-rossi">
+<a class="card" href="/r/torta-di-grano-saraceno-dell-alto-adige-con-marmellata-di-mirtilli-rossi" data-facets="burro frutta-secca marmellata uova" data-type="dolci" data-search="torta di grano saraceno dell&#39;alto adige con marmellata di mirtilli rossi dolci torta grano saraceno mandorle marmellata di mirtilli rossi alto adige burro uova frutta secca marmellata  250 g burro (molto morbido) 250 g zucchero un po&#39; di semi di vaniglia (la polpa della bacca) 6 uova 1 pizzico di cannella 250 g farina di grano saraceno 250 g mandorle macinate 400 g marmellata di mirtilli rossi">
 <img src="/img/torta-di-grano-saraceno-dell-alto-adige-con-marmellata-di-mirtilli-rossi-62f594c6.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di grano saraceno dell&#39;Alto Adige con marmellata di mirtilli rossi</span>
@@ -1776,7 +1776,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-mandorle">
+<a class="card" href="/r/torta-di-mandorle" data-facets="burro frutta-secca uova" data-type="dolci" data-search="torta di mandorle dolci torta mandorle yogurt greco limone frutta secca burro uova  150 g farina di mandorle 150 g farina 00 150 g burro 150 g yogurt greco 150 g zucchero 2 uova 1 bustina di lievito per dolci 1 buccia di limone grattugiata zucchero a velo per decorare mandorle a lamelle">
 <img src="/img/torta-di-mandorle-ce877ef0.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di mandorle</span>
@@ -1785,7 +1785,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-mandorle-siciliana">
+<a class="card" href="/r/torta-di-mandorle-siciliana" data-facets="burro frutta-secca uova" data-type="dolci" data-search="torta di mandorle siciliana dolci torta mandorle sicilia burro frutta secca uova  120 g mandorle pelate 3 uova 90 g zucchero 30 g farina 00 40 g burro">
 <img src="/img/torta-di-mandorle-siciliana-b7f2a628.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di mandorle siciliana</span>
@@ -1794,7 +1794,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-mele-benedetta">
+<a class="card" href="/r/torta-mele-benedetta" data-facets="burro latte mele uova" data-type="dolci" data-search="torta di mele dolci mele torta burro latte uova  3 uova 150 g zucchero 50 ml latte 60 g burro fuso 300 g farina 00 16 g lievito per dolci 2 mele grandi 50 g zucchero (per la gelatina) 8 g amido di mais 125 ml acqua aroma vaniglia">
 <img src="/img/torta-mele-benedetta-5756f042.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di mele</span>
@@ -1803,7 +1803,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-mele-pane">
+<a class="card" href="/r/torta-mele-pane" data-facets="burro latte marmellata mele pane" data-type="dolci" data-search="torta di mele e pane dolci pane raffermo riciclo mele marmellata torta burro latte pane  6 fette di pane raffermo 1 mela renetta 60 g burro 70 g marmellata a scelta 100 g zucchero latte intero q.b.">
 <img src="/img/torta-mele-pane-29407f26.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di mele e pane</span>
@@ -1812,7 +1812,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-nocciole">
+<a class="card" href="/r/torta-di-nocciole" data-facets="burro frutta-secca uova" data-type="dolci" data-search="torta di nocciole dolci torta nocciole burro uova frutta secca  150 g nocciole intere spellate 150 g farina 00 150 g burro a temperatura ambiente 150 g zucchero 8 g lievito in polvere per dolci (mezza bustina) 2 uova a temperatura ambiente zucchero a velo q.b. (a piacere, per la superficie)">
 <img src="/img/torta-di-nocciole-6f87e7b1.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di nocciole</span>
@@ -1821,7 +1821,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-pane-cacao-senza-uova-marmellata">
+<a class="card" href="/r/torta-pane-cacao-senza-uova-marmellata" data-facets="burro cacao latte marmellata pane" data-type="dolci" data-search="torta di pane al cacao senza uova con marmellata dolci pane raffermo riciclo marmellata cacao senza uova torta burro latte pane  350 g pane raffermo 200 ml latte intero caldo 80 g zucchero 60 g burro fuso 40 g cacao amaro 225 g confettura a piacere 25 g gocce di cioccolato fondente">
 <img src="/img/torta-pane-cacao-senza-uova-marmellata-1794dccd.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di pane al cacao senza uova con marmellata</span>
@@ -1830,7 +1830,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-pane-burro-marmellata">
+<a class="card" href="/r/torta-pane-burro-marmellata" data-facets="burro latte marmellata pane uova" data-type="dolci" data-search="torta di pane, burro e marmellata dolci pane raffermo riciclo marmellata torta burro latte pane uova  200 g mollica di pane raffermo 500 ml latte caldo 1 cucchiaino estratto di vaniglia 2 uova 160 g zucchero 70 g farina 00 200 g confettura di fragole 6-7 fiocchi di burro zucchero di canna q.b.">
 <img src="/img/torta-pane-burro-marmellata-1145b4a8.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di pane, burro e marmellata</span>
@@ -1839,7 +1839,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-pangrattato-e-amaretti">
+<a class="card" href="/r/torta-di-pangrattato-e-amaretti" data-facets="cacao frutta-secca latte pane uova" data-type="dolci" data-search="torta di pangrattato e amaretti dolci torta pangrattato amaretti gocce di cioccolato pane uova latte frutta secca cacao  4 uova 200 g zucchero 250 ml panna fresca 200 g pangrattato 200 g amaretti sbriciolati 100 g gocce di cioccolato (oppure cioccolato fondente a pezzetti) 16 g lievito per dolci">
 <img src="/img/torta-di-pangrattato-e-amaretti-3c36ef9e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di pangrattato e amaretti</span>
@@ -1848,7 +1848,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-pesche-e-yogurt">
+<a class="card" href="/r/torta-di-pesche-e-yogurt" data-facets="uova" data-type="dolci" data-search="torta di pesche e yogurt dolci torta pesche yogurt uova  450 g pesche noci 250 g yogurt bianco naturale 190 g farina 00 140 g zucchero 3 uova 75 g olio di semi di girasole 16 g lievito per dolci estratto di vaniglia q.b. sale fino q.b. per la superficie 300 g pesche noci 20 g zucchero per decorare zucchero a velo q.b.">
 <img src="/img/torta-di-pesche-e-yogurt-9ba6b1ff.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di pesche e yogurt</span>
@@ -1857,7 +1857,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-prugne">
+<a class="card" href="/r/torta-di-prugne" data-facets="frutta-secca uova" data-type="dolci" data-search="torta di prugne dolci torta prugne frutta secca uova  500 g prugne 3 uova 200 g zucchero 100 ml olio 100 ml latte di mandorla 300 g farina 00 1 bustina di lievito per dolci zucchero di canna per la superficie">
 <img src="/img/torta-di-prugne-781d8112.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di prugne</span>
@@ -1866,7 +1866,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-di-riso">
+<a class="card" href="/r/torta-di-riso" data-facets="frutta-secca latte uova" data-type="dolci" data-search="torta di riso dolci torta riso uvetta mandorle frutta secca latte uova  1 litro di latte intero 210 g riso carnaroli 1 stecca di cannella 80 g zucchero di canna 2 uova 60 g uvetta 30 g mandorle spellate 1 limone (scorza grattugiata) 15 g canditi di limone e arancia">
 <img src="/img/torta-di-riso-f6773b79.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta di riso</span>
@@ -1875,7 +1875,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-engadinese-di-noci">
+<a class="card" href="/r/torta-engadinese-di-noci" data-facets="burro frutta-secca latte uova" data-type="dolci" data-search="torta engadinese di noci (engadiner nusstorte) dolci crostata torta noci caramello svizzera burro frutta secca latte uova pasta 300 g farina 00 150 g zucchero 200 g burro a pezzetti 1 uovo sbattuto 1 pizzico di sale burro per la teglia ripieno 300 g zucchero 300 g gherigli di noce tritati grossolanamente 200 ml panna fresca liquida 1 cucchiaio di miele">
 <img src="/img/torta-engadinese-di-noci-d0170a1f.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta engadinese di noci (Engadiner Nusstorte)</span>
@@ -1884,7 +1884,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-fredda-al-cioccolato">
+<a class="card" href="/r/torta-fredda-al-cioccolato" data-facets="cacao latte" data-type="dolci" data-search="torta fredda al cioccolato dolci torta senza cottura cioccolato fondente panna latte condensato cacao latte per la torta 500 ml panna fresca 170 g latte condensato 200 g cioccolato fondente fuso 100 g gocce di cioccolato per la decorazione gocce di cioccolato q.b.">
 <img src="/img/torta-fredda-al-cioccolato-2f651067.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta fredda al cioccolato</span>
@@ -1893,7 +1893,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-fredda-limone-biscotti-cioccolato">
+<a class="card" href="/r/torta-fredda-limone-biscotti-cioccolato" data-facets="burro cacao carne latte" data-type="dolci" data-search="torta fredda al limone con base di biscotti al cioccolato dolci torta senza cottura limone biscotti al cioccolato latte condensato portogallo burro cacao latte carne  250 g biscotti al cioccolato (con ripieno) 100 g biscotti maria 50 g burro 1 lattina di latte condensato 4 fogli di colla di pesce 3 dl panna 1 dl succo di limone">
 <img src="/img/torta-fredda-limone-biscotti-cioccolato-93a54f37.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta fredda al limone con base di biscotti al cioccolato</span>
@@ -1902,7 +1902,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-margherita">
+<a class="card" href="/r/torta-margherita" data-facets="uova" data-type="dolci" data-search="torta margherita dolci torta fecola di patate limone uova  250 g fecola di patate 16 g lievito per dolci 1 bustina di vanillina 6 uova 200 g zucchero 1 limone (scorza grattugiata) zucchero a velo q.b.">
 <img src="/img/torta-margherita-591d8952.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta margherita</span>
@@ -1911,7 +1911,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-morbida-al-cocco">
+<a class="card" href="/r/torta-morbida-al-cocco" data-facets="burro latte uova" data-type="dolci" data-search="torta morbida al cocco dolci torta cocco francia burro uova latte  50 g cocco rape 185 g farina 230 g zucchero 125 g burro fuso 2 uova sbattute 250 ml latte 1 bustina di lievito per dolci">
 <img src="/img/torta-morbida-al-cocco-70b28ff9.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta morbida al cocco</span>
@@ -1920,7 +1920,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-morbida-ricotta-marmellata">
+<a class="card" href="/r/torta-morbida-ricotta-marmellata" data-facets="marmellata ricotta uova" data-type="dolci" data-search="torta morbida ricotta e marmellata dolci marmellata di susine ricotta torta marmellata uova  500 g ricotta (mucca o pecora) 3 uova 125 g yogurt bianco 130 g zucchero 40 g fecola di patate scorza di 1 limone non trattato marmellata q.b.">
 <img src="/img/torta-morbida-ricotta-marmellata-8953cb39.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta morbida ricotta e marmellata</span>
@@ -1929,7 +1929,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-paesana">
+<a class="card" href="/r/torta-paesana" data-facets="burro cacao frutta-secca latte pane uova" data-type="dolci" data-search="torta paesana dolci pane raffermo riciclo cacao torta brianza burro frutta secca latte pane uova  300 g pane raffermo 1 l latte intero 2 uova 50 g cacao amaro 100 g zucchero semolato 30 g mandorle spellate 30 g pinoli 100 g uvetta 1 arancia non trattata (scorza e succo) 100 g amaretti burro e pangrattato per lo stampo">
 <img src="/img/torta-paesana-88cd3465.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta paesana</span>
@@ -1938,7 +1938,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-paradiso">
+<a class="card" href="/r/torta-paradiso" data-facets="burro uova" data-type="dolci" data-search="torta paradiso dolci torta fecola di patate limone burro uova  4 uova 200 g zucchero 120 g burro a temperatura ambiente 100 g fecola di patate 180 g farina 00 1 limone (per la scorza) 16 g lievito per dolci zucchero a velo vanigliato q.b.">
 <img src="/img/torta-paradiso-812abbea.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta paradiso</span>
@@ -1947,7 +1947,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-quattro-quarti-alla-vaniglia">
+<a class="card" href="/r/torta-quattro-quarti-alla-vaniglia" data-facets="burro uova" data-type="dolci" data-search="torta quattro quarti alla vaniglia (quatre-quarts) dolci torta plumcake vaniglia francia burro uova  150 g zucchero 150 g farina 150 g burro morbido 3 uova 1 bustina di lievito per dolci 1 baccello di vaniglia 1 cucchiaino di estratto di vaniglia o vaniglia liquida 1 pizzico di sale fino">
 <img src="/img/torta-quattro-quarti-alla-vaniglia-42827afe.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta quattro quarti alla vaniglia (quatre-quarts)</span>
@@ -1956,7 +1956,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-soffice-alle-fragole">
+<a class="card" href="/r/torta-soffice-alle-fragole" data-facets="burro uova" data-type="dolci" data-search="torta soffice alle fragole dolci torta fragole burro uova  300 g farina 00 180 g zucchero 100 g burro 240 g fragole 110 g uova (circa 2 medie) 16 g lievito per dolci 1/2 limone (succo)">
 <img src="/img/torta-soffice-alle-fragole-91d2290e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta soffice alle fragole</span>
@@ -1965,7 +1965,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-soffice-confettura-ciliegie">
+<a class="card" href="/r/torta-soffice-confettura-ciliegie" data-facets="burro marmellata uova" data-type="dolci" data-search="torta soffice con confettura di ciliegie dolci ciliegie marmellata di ciliegie torta burro marmellata uova  200 g farina 00 170 g zucchero 170 g burro morbido 2 uova 1 tuorlo 1 cucchiaio raso di lievito per dolci 1 pizzico di sale 1 limone (scorza grattata) 1 vasetto di confettura di ciliegie">
 <img src="/img/torta-soffice-confettura-ciliegie-7716a87a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta soffice con confettura di ciliegie</span>
@@ -1974,7 +1974,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-soffice-albicocche">
+<a class="card" href="/r/torta-soffice-albicocche" data-facets="frutta-secca latte uova" data-type="dolci" data-search="torta soffice di albicocche dolci albicocche torta olio di semi mandorle frutta secca latte uova  300 g albicocche a pezzetti 2 uova 150 g zucchero 100 ml latte 100 ml olio di semi 250 g farina 00 8 g lievito per dolci 1 limone (scorza grattugiata) lamelle di mandorle">
 <img src="/img/torta-soffice-albicocche-3615c335.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta soffice di albicocche</span>
@@ -1983,7 +1983,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/torta-tenerina">
+<a class="card" href="/r/torta-tenerina" data-facets="burro cacao uova" data-type="dolci" data-search="torta tenerina dolci torta cioccolato fondente burro cacao uova  200 g cioccolato fondente al 55% 100 g burro 4 uova medie 150 g zucchero 50 g farina 00 per spolverizzare zucchero a velo q.b.">
 <img src="/img/torta-tenerina-39ea92cc.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Torta tenerina</span>
@@ -1992,7 +1992,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/wahe-mele-miele">
+<a class="card" href="/r/wahe-mele-miele" data-facets="frutta-secca latte mele uova" data-type="dolci" data-search="wahe di mele e miele (honig-apfel-wahe) dolci crostata mele miele svizzera frutta secca latte uova base carta forno 1 rotolo di pasta brisee pronta, gia stesa rotonda (circa 270 g) ripieno 4 cucchiai di mandorle macinate 750 g mele (ad es. rubinette), pulite, grattugiate con la grattugia per rosti (fori grossi) composto 150 ml panna 100 ml latte 3 uova 100 g miele liquido per finire zucchero a velo, per spolverare">
 <img src="/img/wahe-mele-miele-2c32a5e7.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Wähe di mele e miele (Honig-Apfel-Wähe)</span>
@@ -2001,7 +2001,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zabaione">
+<a class="card" href="/r/zabaione" data-facets="alcol uova" data-type="dolci" data-search="zabaione dolci crema dolce al cucchiaio zabaglione marsala uova alcol  4 tuorli 80 g zucchero 100 ml marsala">
 <img src="/img/zabaione-8ea8a12a.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zabaione</span>
@@ -2010,7 +2010,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zaleti">
+<a class="card" href="/r/zaleti" data-facets="alcol burro latte uova" data-type="dolci" data-search="zaleti (biscotti veneti di mais e uvetta) dolci biscotti farina di mais uvetta uova burro latte alcol  150 g farina 00 150 g farina di mais 100 g uvetta 100 g zucchero semolato 80 g burro morbido 2 cucchiai di latte 2 cucchiaini di lievito in polvere per dolci 1 uovo 1/2 bicchierino di grappa sale q.b.">
 <img src="/img/zaleti-4f3ea0c5.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zaleti (biscotti veneti di mais e uvetta)</span>
@@ -2019,7 +2019,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/zaletti">
+<a class="card" href="/r/zaletti" data-facets="burro latte uova" data-type="dolci" data-search="zaletti (biscotti veneti di farina di mais) dolci biscotti farina di mais uvetta veneto burro latte uova  75 g farina di mais 75 g farina 00 50 g zucchero 1 tuorlo 50 g uvetta 45 g burro morbido scorza di limone q.b. 1 cucchiaio di latte 1 pizzico di sale 1 cucchiaino di lievito per dolci">
 <img src="/img/zaletti-ef1c9d1c.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Zaletti (biscotti veneti di farina di mais)</span>
@@ -2028,7 +2028,7 @@
 </span>
 </a>
 
-<a class="card" href="/r/oellebroed">
+<a class="card" href="/r/oellebroed" data-facets="frutta-secca latte pane" data-type="dolci" data-search="llebrd (zuppa dolce danese di pane di segale e birra) dolci zuppa dolce dolce al cucchiaio pane di segale frutti di bosco danimarca pane latte frutta secca per la zuppa 300 g pane di segale (rugbrd), sbriciolato 4 dl birra analcolica (nell&#39;originale hvidtl) 2 cucchiaini di zucchero di canna (brun farin) 1 cucchiaino di cannella in polvere 1 pizzico di sale per accompagnare 15 mandorle 1 cucchiaio di miele 200 g frutti di bosco freschi 1 dl panna fresca da montare">
 <img src="/img/oellebroed-149cfc3e.jpg" alt="" loading="lazy">
 <span class="card-body">
 <span class="card-title">Øllebrød (zuppa dolce danese di pane di segale e birra)</span>
@@ -2039,6 +2039,7 @@
 
 </div>
 
+<script src="/static/filters.js" defer></script>
 
 </div>
 </body>

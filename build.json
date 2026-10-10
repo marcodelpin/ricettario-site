@@ -2,8 +2,8 @@
   "recipes": 216,
   "pages": 218,
   "images": 215,
-  "bytes": 39417017,
-  "built_utc": "2026-10-10T08:21:28Z",
-  "commit": "67dd21c6e2ccd3934d6b6ccc52059d5af0d40d23",
+  "bytes": 39517659,
+  "built_utc": "2026-10-10T08:54:02Z",
+  "commit": "e7db7e5fbc722919ffe1de73643007b5c89ed5dd",
   "source": "http://ricettario.mdp"
 }
