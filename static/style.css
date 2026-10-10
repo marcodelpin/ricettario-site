@@ -1,0 +1,105 @@
+/* ricettario: tablet-first, large type, no JavaScript, no external resources */
+:root {
+  --paper: #fbf3e2;
+  --card: #fffaf0;
+  --ink: #3b2415;
+  --muted: #7a5b45;
+  --accent: #9c4a1a;
+  --line: #e2cfa9;
+  --note: #fff0b8;
+}
+* { box-sizing: border-box; }
+html { font-size: 22px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.wrap { max-width: 800px; margin: 0 auto; padding: 1rem 1.1rem 3rem; }
+h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.2; color: var(--ink); }
+h1 { font-size: 2.1rem; margin: 0.4rem 0 0.8rem; }
+h2 { font-size: 1.55rem; margin: 2rem 0 0.6rem; border-bottom: 2px solid var(--line); padding-bottom: 0.2rem; }
+a { color: var(--accent); }
+.topbar { padding: 0.4rem 0 0.8rem; }
+.topbar a { display: inline-block; min-height: 3rem; line-height: 3rem; font-size: 1.1rem; text-decoration: none; font-weight: bold; }
+.search { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.8rem 0 1.4rem; }
+.search input[type=search] { min-width: 0; }
+@media (max-width: 520px) { .search input[type=search], .search button { flex: 1 1 100%; } }
+.search input[type=search] {
+  flex: 1; min-height: 3.3rem; font: inherit; padding: 0 1rem;
+  border: 2px solid var(--line); border-radius: 0.6rem; background: #fff; color: var(--ink);
+}
+.search button {
+  min-height: 3.3rem; padding: 0 1.4rem; font: inherit; font-weight: bold; color: #fff;
+  background: var(--accent); border: 0; border-radius: 0.6rem;
+}
+.facet-row { flex: 1 1 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.facet-row-label { flex: 0 0 4.5rem; font-weight: bold; color: var(--muted); }
+.facet {
+  display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; padding: 0 0.9rem;
+  border: 2px solid var(--line); border-radius: 0.6rem; background: #fff; color: var(--ink); cursor: pointer;
+}
+.facet input { flex: none; width: 1.4rem; height: 1.4rem; margin: 0; accent-color: var(--accent); }
+/* .on is set by the server for the submitted choice: Chrome 97 on the reader's tablet ignores :has(). */
+.facet.on { background: var(--note); border-color: var(--accent); }
+.facet:has(input:checked) { background: var(--note); border-color: var(--accent); }
+.count { margin: 0 0 1rem; font-size: 1.15rem; color: var(--muted); }
+/* The type selector (SPEC R12): plain links, the chosen one marked by the server (.on), a type with no recipe dashed. */
+.types { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1rem; }
+.type {
+  display: inline-flex; align-items: center; gap: 0.5rem; min-height: 3rem; padding: 0 0.9rem;
+  border: 2px solid var(--line); border-radius: 0.6rem; background: #fff; color: var(--ink);
+  font-weight: bold; text-decoration: none;
+}
+.type-n { font-weight: normal; color: var(--muted); }
+.type.on { background: var(--note); border-color: var(--accent); }
+.type.off { background: transparent; border-style: dashed; color: var(--muted); }
+.cards { display: grid; grid-template-columns: 1fr; gap: 1rem; align-items: start; }
+.card {
+  display: block; background: var(--card); border: 2px solid var(--line); border-radius: 0.8rem;
+  overflow: hidden; text-decoration: none; color: var(--ink); min-height: 3.3rem;
+}
+.card img { display: block; width: 100%; height: 11rem; object-fit: cover; }
+.card .card-body { display: block; padding: 0.7rem 1rem 0.9rem; }
+.card .card-ph { display: flex; align-items: center; justify-content: center; height: 11rem; background: var(--line); color: var(--accent); font-size: 4rem; font-weight: bold; }
+.card .card-title { display: block; font-size: 1.35rem; font-weight: bold; line-height: 1.25; }
+.card .card-meta { display: block; color: var(--muted); font-size: 1.1rem; }
+.card .card-variant { display: block; margin-top: 0.4rem; background: var(--note); border-radius: 0.4rem; padding: 0.3rem 0.6rem; font-size: 1.05rem; }
+.empty { font-size: 1.2rem; color: var(--muted); }
+.hero { margin: 0 -1.1rem 0.6rem; }
+.hero img { display: block; width: 100%; max-height: 24rem; object-fit: cover; }
+.cat { color: var(--muted); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+.facts { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0; padding: 0; list-style: none; }
+.facts li { flex: 1 1 8rem; background: var(--card); border: 2px solid var(--line); border-radius: 0.6rem; padding: 0.4rem 0.8rem; }
+.facts .label { display: block; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.facts .value { display: block; font-size: 1.2rem; font-weight: bold; }
+.variant { background: var(--note); border-left: 0.5rem solid var(--accent); border-radius: 0.4rem; padding: 0.8rem 1rem; margin: 1rem 0; font-size: 1.1rem; }
+.ingredients { list-style: none; padding: 0; margin: 0 0 0.6rem; }
+.ingredients li { font-size: 1.1rem; position: relative; padding: 0.55rem 0 0.55rem 2.4rem; border-bottom: 1px dotted var(--line); }
+.ingredients li::before {
+  content: ""; position: absolute; left: 0.2rem; top: 0.85rem; width: 1.2rem; height: 1.2rem;
+  border: 2px solid var(--accent); border-radius: 0.25rem; background: #fff;
+}
+.ing-section { font-size: 1.15rem; margin: 1.2rem 0 0.2rem; color: var(--accent); }
+.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; }
+.steps li { counter-increment: step; position: relative; padding: 0.4rem 0 1rem 3.6rem; font-size: 1.1rem; }
+.steps li::before {
+  content: counter(step); position: absolute; left: 0; top: 0.3rem; width: 2.6rem; height: 2.6rem;
+  line-height: 2.6rem; text-align: center; font-weight: bold; font-size: 1.3rem;
+  color: #fff; background: var(--accent); border-radius: 50%;
+}
+.notes { padding-left: 1.4rem; }
+.notes li { margin-bottom: 0.4rem; }
+.source { margin-top: 2.5rem; font-size: 1rem; color: var(--muted); }
+@media (min-width: 560px) { .cards { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 1000px) { body.home .wrap { max-width: 1100px; } body.home .cards { grid-template-columns: repeat(3, 1fr); } }
+.search input::placeholder { color: var(--muted); opacity: 1; }
+@media print {
+  body { background: #fff; font-size: 12pt; }
+  .topbar, .search, .types { display: none; }
+  .hero img, .card img { max-height: 8cm; }
+  .steps li::before { color: #000; background: #fff; border: 1px solid #000; }
+}
